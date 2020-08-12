@@ -1,0 +1,60 @@
+﻿:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+ 
+  --color-white-opacity-30: #ffffff30;
+  --color-black-opacity-30: #00000030;
+}
+
+@font-face {
+	font-family: "font";
+	src: url(../fonts/font.woff);
+	src: url(../fonts/font.woff2);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	min-width: 1200px;
+	margin: 0;
+	padding: 0;
+
+	font-family: "Font", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	color: #000000;
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
