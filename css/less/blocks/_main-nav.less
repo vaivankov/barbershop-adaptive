@@ -1,8 +1,77 @@
 // main: ../../style.less
 
 .main-nav {
+  position: relative;
+
   width: 320px;
   margin: 0 auto;
+
+  background-color: @color-bg-main-nav;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 70px;
+  height: 50px;
+
+  background-color: @color-link;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: @color-link-hover;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  width: 36px;
+  height: 2px;
+
+  background-color: @color-white;
+  box-shadow: 0 8px 0 0 @color-white, 0 16px 0 0 @color-white;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+
+    width: 36px;
+    height: 2px;
+
+    background-color: @color-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: @color-white-opacity-30;
+  }
 }
 
 .main-nav__list {
@@ -22,10 +91,6 @@
     margin: 0 auto;
   }
 
-  .site-list {
-    width: 570px;
-  }
-
   .user-list {
     width: 60px;
   }
@@ -34,10 +99,6 @@
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
     width: 960px;
-  }
-
-  .site-list {
-    width: 780px;
   }
 
   .user-list {

@@ -1,0 +1,47 @@
+// main: ../../style.less
+
+.site-list {
+  font-weight: bold;
+}
+
+.site-list a {
+  display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
+
+  font-size: 18px;
+  line-height: 24px;
+  color: @color-white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: @color-bg-main-nav;
+  border-top: 1px solid @color-bg-main-nav-bd-top;
+  border-bottom: 1px solid @color-bg-main-nav-bd-bottom;
+}
+
+.site-list a[href] {
+  &:hover {
+    background-color: @color-bg-main-nav-hover;
+    border-top-color: @color-bg-main-nav-hover;
+  }
+
+  &:active {
+    color: @color-white-opacity-30;
+
+    background-color: @color-bg-main-nav-active;
+    border-top-color: @color-bg-main-nav-active;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    width: 570px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 780px;
+  }
+}
