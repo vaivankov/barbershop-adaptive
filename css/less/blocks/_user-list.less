@@ -1,5 +1,46 @@
 // main: ../../style.less
 
+.user-list__login {
+  position: relative;
+
+  display: block;
+  padding: 17px 21px;
+  padding-left: 49px;
+
+  line-height: 18px;
+  color: @color-white;
+  text-decoration: none;
+}
+
+.user-list__login-icon {
+  position: absolute;
+  top: 17px;
+  left: 21px;
+
+  width: 16px;
+  height: 16px;
+
+  opacity: 0.3;
+
+  polygon {
+    fill: @color-white;
+  }
+}
+
+.user-list a[href] {
+  &:hover {
+    background-color: @color-bg-main-nav-hover;
+    border-top-color: @color-bg-main-nav-hover;
+  }
+
+  &:active {
+    color: @color-white-opacity-30;
+
+    background-color: @color-bg-main-nav-active;
+    border-top-color: @color-bg-main-nav-active;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .user-list {
     width: 60px;
