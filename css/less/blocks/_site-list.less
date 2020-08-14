@@ -95,4 +95,33 @@
   .site-list {
     width: 780px;
   }
+
+  .site-list__item {
+    margin-right: 0;
+
+    &--active::after {
+      right: 30px;
+      left: 30px;
+    }
+  }
+
+  .site-list__item a {
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  .site-list__item a[href] {
+    &:hover {
+      color: @color-black;
+
+      background-color: @color-white;
+    }
+
+    &:active {
+      color: @color-black-opacity-30;
+
+      background-color: @color-white;
+      opacity: 1;
+    }
+  }
 }
