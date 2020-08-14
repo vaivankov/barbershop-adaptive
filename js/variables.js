@@ -1,3 +1,6 @@
-'use strict';
+"use strict";
 
-window.aaa = document.querySelectorAll('body');
+window.mainMenu = document.querySelector(".main-nav");
+window.mainMenuToggle = document.querySelector(".main-nav__toggle");
+
+mainMenu.classList.remove("main-nav--nojs");
