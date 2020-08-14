@@ -27,23 +27,38 @@
   }
 }
 
-.user-list a[href] {
-  &:hover {
-    background-color: @color-bg-main-nav-hover;
-    border-top-color: @color-bg-main-nav-hover;
-  }
-
-  &:active {
-    color: @color-white-opacity-30;
-
-    background-color: @color-bg-main-nav-active;
-    border-top-color: @color-bg-main-nav-active;
-  }
-}
-
 @media (min-width: @tablet-width) {
   .user-list {
     width: 60px;
+  }
+
+  .user-list__login {
+    width: 60px;
+    height: 70px;
+    padding: 0;
+
+    font-size: 0;
+
+    &:hover .user-list__login-icon {
+      opacity: 1;
+
+      polygon {
+        fill: @color-bg-main-nav;
+      }
+    }
+
+    &:active .user-list__login-icon {
+      opacity: 0.3;
+
+      polygon {
+        fill: @color-white;
+      }
+    }
+  }
+
+  .user-list__login-icon {
+    top: 29px;
+    left: 12px;
   }
 }
 
