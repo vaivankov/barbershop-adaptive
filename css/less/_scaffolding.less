@@ -1,5 +1,25 @@
 ﻿// main: ../style.less
 
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "PT Sans Narrow";
+
+  font-display: swap;
+  src: url("../../fonts/PTSans-Narrow.woff2") format("woff2"),
+  url("../../fonts/PTSans-Narrow.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "PT Sans Narrow";
+
+  font-display: swap;
+  src: url("../../fonts/PTSans-NarrowBold.woff2") format("woff2"),
+  url("../../fonts/PTSans-NarrowBold.woff") format("woff");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -18,7 +38,7 @@ body {
   font-style: normal;
   font-size: 18px;
   line-height: 27px;
-  font-family: Arial, sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   color: @text-main;
 
   background-color: @bg-dark-gray;
