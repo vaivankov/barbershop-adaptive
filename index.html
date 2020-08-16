@@ -12,13 +12,23 @@
 		<header class="page-header">
 			<h2 class="visually-hidden">Шапка сайта</h2>
 			<a class="page-header__logo">
-				<img
-					class="page-header__logo"
-					src="img/svg/logotype-mobile.svg"
-					width="226"
-					height="30"
-					alt="Логотип Барбершопа «Бородинский»"
-				/>
+				<picture>
+					<source
+						media="(min-width:1200px)"
+						srcset="img/vector/logotype-desktop.svg"
+					/>
+					<source
+						media="(min-width:768px)"
+						srcset="img/vector/logotype-tablet.svg"
+					/>
+					<img
+						class="page-header__logo-mage"
+						src="img/vector/logotype-mobile.svg"
+						width="226"
+						height="30"
+						alt="Логотип Барбершопа «Бородинский»"
+					/>
+				</picture>
 			</a>
 			<nav class="main-nav main-nav--closed main-nav--nojs">
 				<button class="main-nav__toggle" type="button">
@@ -211,7 +221,7 @@
 							<p class="reviews__author-picture">
 								<img
 									class="reviews__author-image"
-									src="img/picture-travis.jpg"
+									src="img/raster/picture-travis.jpg"
 									alt="Фото Трэвиса Баркера"
 									width="50"
 									height="33"
@@ -227,7 +237,7 @@
 							<p class="reviews__author-picture">
 								<img
 									class="reviews__author-image"
-									src="img/picture-john.jpg"
+									src="img/raster/picture-john.jpg"
 									alt="Фото Джона Смита"
 									width="50"
 									height="33"
@@ -240,7 +250,7 @@
 							<p class="reviews__author-picture">
 								<img
 									class="reviews__author-image"
-									src="img/picture-ivan.jpg"
+									src="img/raster/picture-ivan.jpg"
 									alt="Фото Ивана Бородайло"
 									width="50"
 									height="33"
