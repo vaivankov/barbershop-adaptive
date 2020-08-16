@@ -70,7 +70,7 @@
 				</div>
 			</nav>
 		</header>
-		<main class="page-main page-main-inner">
+		<main class="page-main page-main--inner">
 			<header class="page-title">
 				<h1 class="page-title__title">Наши работы</h1>
 				<a class="button" href="index.html">На главную</a>
@@ -78,11 +78,21 @@
 			<section class="works">
 				<div class="works-item works-item--work-of-month">
 					<p class="works-item__image-wrapper">
-						<img
-							class="works-item__image"
-							src="img/raster/work-tablet-1.jpg"
-							alt="Фото стрижки Лжепётра Мчиславского"
-						/>
+						<picture>
+							<source
+								media="(min-width: 1200px)"
+								srcset="
+									img/raster/work-desktop-1.jpg    1x,
+									img/raster/work-desktop-1@2x.jpg 2x
+								"
+							/>
+							<img
+								class="works-item__image"
+								src="img/raster/work-tablet-1.jpg"
+								srcset="img/raster/work-tablet-1@2x.jpg 2x"
+								alt="Фото стрижки Лжепётра Мчиславского"
+							/>
+						</picture>
 					</p>
 					<div class="works-item__review">
 						<h2 class="works-item__title">Лжепётр Мчиславский</h2>
@@ -111,11 +121,21 @@
 				</div>
 				<div class="works-item">
 					<p class="works-item__image-wrapper">
-						<img
-							class="works-item__image"
-							src="img/raster/work-tablet-2.jpg"
-							alt="Фото стрижки Саши Мальцева"
-						/>
+						<picture>
+							<source
+								media="(min-width: 1200px)"
+								srcset="
+									img/raster/work-desktop-2.jpg    1x,
+									img/raster/work-desktop-2@2x.jpg 2x
+								"
+							/>
+							<img
+								class="works-item__image"
+								src="img/raster/work-tablet-2.jpg"
+								srcset="img/raster/work-tablet-2@2x.jpg 2x"
+								alt="Фото стрижки Саши Мальцева"
+							/>
+						</picture>
 					</p>
 					<div class="works-item__review">
 						<h2 class="works-item__title">Саша Мальцев</h2>
@@ -133,11 +153,21 @@
 				</div>
 				<div class="works-item">
 					<p class="works-item__image-wrapper">
-						<img
-							class="works-item__image"
-							src="img/raster/work-tablet-3.jpg"
-							alt="Фото стрижки Владимира Иваныча"
-						/>
+						<picture>
+							<source
+								media="(min-width: 1200px)"
+								srcset="
+									img/raster/work-desktop-3.jpg    1x,
+									img/raster/work-desktop-3@2x.jpg 2x
+								"
+							/>
+							<img
+								class="works-item__image"
+								src="img/raster/work-tablet-3.jpg"
+								srcset="img/raster/work-tablet-3@2x.jpg 2x"
+								alt="Фото стрижки Владимира Иваныча"
+							/>
+						</picture>
 					</p>
 					<div class="works-item__review">
 						<h2 class="works-item__title">Владимир Иваныч</h2>
@@ -160,11 +190,21 @@
 				</div>
 				<div class="works-item">
 					<p class="works-item__image-wrapper">
-						<img
-							class="works-item__image"
-							src="img/raster/work-tablet-4.jpg"
-							alt="Фото стрижки Винстона Синего"
-						/>
+						<picture>
+							<source
+								media="(min-width: 1200px)"
+								srcset="
+									img/raster/work-desktop-4.jpg    1x,
+									img/raster/work-desktop-4@2x.jpg 2x
+								"
+							/>
+							<img
+								class="works-item__image"
+								src="img/raster/work-tablet-4.jpg"
+								srcset="img/raster/work-tablet-4@2x.jpg 2x"
+								alt="Фото стрижки Винстона Синего"
+							/>
+						</picture>
 					</p>
 					<div class="works-item__review">
 						<h2 class="works-item__title">Винстон Синий</h2>
