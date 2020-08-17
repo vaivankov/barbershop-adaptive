@@ -1,7 +1,7 @@
 // main: ../../style.less
 
 .stats {
-  width: auto;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -118,8 +118,7 @@
 
 @media (min-width: @tablet-width) {
   .stats {
-    width: 84%;
-    max-width: 960px;
+    width: 640px;
     margin: 0 auto;
     margin-top: -185px;
   }
@@ -130,6 +129,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-height: 185px;
 
     &::before {
       content: "";
@@ -144,7 +144,7 @@
   }
 
   .stats__slogan {
-    width: 50%;
+    width: 300px;
     margin-bottom: 18px;
 
     font-size: 40px;
@@ -153,22 +153,17 @@
     text-transform: none;
   }
 
-  .stats__slogan br {
-    display: none;
-  }
-
   .stats__intro {
-    width: 37.5%;
+    width: 220px;
     margin-top: 5px;
     padding: 0;
-    padding-left: 30px;
 
     text-align: left;
   }
 
   .stats__legend--top {
     display: block;
-    width: 50%;
+    width: 300px;
 
     color: @color-black-opacity-30;
   }
@@ -247,6 +242,8 @@
   }
 
   .stats__list {
+    position: relative;
+
     display: flex;
     flex-grow: 1;
     width: 640px;

@@ -1,0 +1,42 @@
+// main: ../../style.less
+
+.page-main--inner {
+  position: relative;
+
+  width: 320px;
+  margin: 0 auto;
+
+  color: @color-black;
+
+  background-color: @color-bg-light-gray;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main--inner {
+    width: 100%;
+  }
+
+  .page-main--inner::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 50px;
+
+    background-image: linear-gradient(
+    to top right,
+    @color-bg-light-gray 50%,
+    transparent 50%
+    ),
+    linear-gradient(to top left, @color-bg-light-gray 50%, transparent 50%);
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0;
+    background-size: 50.1% 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+}

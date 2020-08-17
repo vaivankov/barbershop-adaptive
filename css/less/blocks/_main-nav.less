@@ -153,8 +153,9 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    width: auto;
-    margin: 0;
+    width: 640px;
+    max-width: 960px;
+    margin: 0 auto;
 
     background-color: @color-black;
   }
@@ -162,10 +163,6 @@
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 640px;
-    width: 84%;
-    max-width: 960px;
-    margin: 0 auto;
   }
 
   .main-nav__toggle {
@@ -174,4 +171,9 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    width: 960px;
+    max-width: 1200px;
+    min-height: auto;
+  }
 }

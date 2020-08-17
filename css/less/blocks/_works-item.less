@@ -1,0 +1,228 @@
+// main: ../../style.less
+
+.works-item {
+  margin-bottom: 20px;
+  padding: 0 20px;
+
+  color: @color-black;
+}
+
+.works-item--work-of-month {
+  position: relative;
+}
+
+.works-item--work-of-month::before {
+  content: "Работа месяца";
+  position: absolute;
+  top: 401px;
+  left: 20px;
+  z-index: 2;
+
+  width: 160px;
+  height: 50px;
+  padding-top: 15px;
+  padding-right: 11px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: @color-white;
+  text-transform: uppercase;
+
+  background-color: @color-bg-main-nav;
+}
+
+.works-item--work-of-month::after {
+  content: "";
+  position: absolute;
+  top: 401px;
+  left: 180px;
+  z-index: 2;
+
+  width: 16px;
+  height: 50px;
+
+  background-image: linear-gradient(
+  to top left,
+  transparent 50%,
+  @color-bg-main-nav 50%
+  ),
+  linear-gradient(to top right, @color-bg-main-nav 50%, transparent 50%);
+}
+
+.works-item__image-wrapper {
+  position: relative;
+
+  height: 176px;
+  margin: 0;
+  overflow: hidden;
+
+  line-height: 0;
+  text-align: center;
+
+  background-color: @color-bg-image;
+}
+
+.works-item__image-wrapper img {
+  width: 100%;
+}
+
+.works-item--work-of-month .works-item__image-wrapper {
+  height: 480px;
+}
+
+.works-item__text {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.works-item__review {
+  display: flex;
+  flex-direction: column;
+  padding-top: 19px;
+  padding-right: 21px;
+  padding-bottom: 0;
+  padding-left: 21px;
+
+  border: 1px solid @color-image-border;
+}
+
+.works-item__parameter-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: auto;
+  padding: 0;
+  padding-bottom: 10px;
+
+  list-style: none;
+}
+
+.works-item__parameter-item {
+  position: relative;
+
+  width: 118px;
+  padding-bottom: 10px;
+}
+
+.works-item__parameter-item::before {
+  content: "";
+
+  display: inline-block;
+  width: 45px;
+  height: 21px;
+
+  vertical-align: middle;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.works-item__parameter-item--haircut::before {
+  background-image: url("../../../img/vector/scissors-icon.svg");
+}
+
+.works-item__parameter-item--shaving::before {
+  background-image: url("../../../img/vector/beard-icon.svg");
+}
+
+.works-item__parameter-item--mustache::before {
+  background-image: url("../../../img/vector/mustache-icon.svg");
+}
+
+.works-item__parameter-item--mustache:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .works-item {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 41px;
+    padding: 0;
+  }
+
+  .works-item__review {
+    flex-grow: 1;
+    padding-right: 41px;
+    padding-bottom: 19px;
+    padding-left: 41px;
+  }
+
+  .works-item__image-wrapper {
+    flex-shrink: 0;
+    height: 100%;
+  }
+
+  .works-item--work-of-month::before {
+    top: 35px;
+    bottom: auto;
+    left: 0;
+  }
+
+  .works-item--work-of-month::after {
+    top: 35px;
+    bottom: auto;
+    left: 160px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .works-item:not(:first-child) {
+    flex-direction: column;
+    width: 295px;
+  }
+
+  .works-item:nth-child(3n + 1) {
+    margin-right: 0;
+  }
+
+  .works-item__image-wrapper {
+    width: auto;
+    height: auto;
+  }
+
+  .works-item--work-of-month .works-item__review {
+    padding-top: 92px;
+  }
+
+  .works-item__title {
+    margin-bottom: 0;
+  }
+
+  .works-item:not(:first-child) .works-item__review {
+    padding-right: 35px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+
+    border-top: none;
+    border-left: 1px solid @color-image-border;
+  }
+
+  .works-item--work-of-month .works-item__text {
+    padding-right: 85px;
+  }
+
+  .works-item__parameter-item {
+    width: auto;
+    margin-right: 35px;
+  }
+
+  .works-item--work-of-month::before {
+    left: 800px;
+  }
+
+  .works-item--work-of-month::after {
+    left: 784px;
+
+    background-image: linear-gradient(
+    to top right,
+    transparent 50%,
+    @color-bg-main-nav 50%
+    ),
+    linear-gradient(to top left, @color-bg-main-nav 50%, transparent 50%);
+  }
+}
