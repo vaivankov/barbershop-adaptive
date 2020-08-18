@@ -1,0 +1,33 @@
+// main: ../../style.less
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider__toggles {
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider__toggle:checked + .slider__indicator {
+  background-color: @color-white;
+}
+
+.slider__indicator {
+  display: block;
+  width: 8px;
+  height: 8px;
+
+  border: 1px solid @color-white;
+  transform: rotate(45deg);
+}
+
+@media (min-width: @tablet-width) {
+}
+
+@media (min-width: @desktop-width) {
+}
