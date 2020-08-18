@@ -123,26 +123,45 @@
 				<h2 class="visually-hidden">Наши преимущества</h2>
 				<div class="advantages__wrapper slider">
 					<ul class="advantages__list slider__list">
-						<li class="advantages__item advantages__item--fast slider__item">
+						<li class="advantages__item slider__item">
+							<img
+								class="advantages__icon"
+								width="100"
+								height="100"
+								src="img/vector/advantage-1-illustration.svg"
+								alt="Иконка ножниц"
+							/>
 							<b class="advantages__title">Быстро</b>
 							<p class="advantages__description">
-								Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы —
-								счастливый обладатель стильной стрижки-минутки
+								Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы
+								&ndash; счастливый обладатель стильной стрижки-минутки
 							</p>
 						</li>
-						<li class="advantages__item advantages__item--cool slider__item">
+						<li class="advantages__item slider__item">
+							<img
+								class="advantages__icon"
+								width="100"
+								height="100"
+								src="img/vector/advantage-2-illustration.svg"
+								alt="Иконка кресла"
+							/>
 							<b class="advantages__title">Круто</b>
 							<p class="advantages__description">
 								Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду
 								футбола или кино. Во всяком случае внешне.
 							</p>
 						</li>
-						<li
-							class="advantages__item advantages__item--expensive slider__item"
-						>
+						<li class="advantages__item slider__item">
+							<img
+								class="advantages__icon"
+								width="100"
+								height="100"
+								src="img/vector/advantage-3-illustration.svg"
+								alt="Иконка конфетницы"
+							/>
 							<b class="advantages__title">Дорого</b>
 							<p class="advantages__description">
-								Наши мастера — профессионалы своего дела и не могут стоить
+								Наши мастера &ndash; профессионалы своего дела и не могут стоить
 								дёшево. К тому же, разве цена не даёт определённый статус?
 							</p>
 						</li>
@@ -154,6 +173,12 @@
 									class="slider__toggle visually-hidden"
 									name="advantages__slider-radio"
 									type="radio"
+									data-src="img/vector/advantage-1-illustration.svg"
+									data-title="Быстро"
+									data-description="Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы &ndash; счастливый обладатель стильной стрижки-минутки."
+									data-target-src=".advantages__icon"
+									data-target-title=".advantages__title"
+									data-target-description=".advantages__description"
 									checked
 								/>
 								<span class="slider__indicator"></span>
@@ -166,6 +191,12 @@
 									class="slider__toggle visually-hidden"
 									name="advantages__slider-radio"
 									type="radio"
+									data-src="img/vector/advantage-2-illustration.svg"
+									data-title="Круто"
+									data-description="Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. Во всяком случае внешне."
+									data-target-src=".advantages__icon"
+									data-target-title=".advantages__title"
+									data-target-description=".advantages__description"
 								/>
 								<span class="slider__indicator"></span>
 								<span class="visually-hidden">Преимущество 2</span>
@@ -177,6 +208,12 @@
 									class="slider__toggle visually-hidden"
 									name="advantages__slider-radio"
 									type="radio"
+									data-src="img/vector/advantage-3-illustration.svg"
+									data-title="Дорого"
+									data-description="Наши мастера &ndash; профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?"
+									data-target-src=".advantages__icon"
+									data-target-title=".advantages__title"
+									data-target-description=".advantages__description"
 								/>
 								<span class="slider__indicator"></span>
 								<span class="visually-hidden">Преимущество 3</span>
@@ -351,6 +388,7 @@
 		</footer>
 		<script src="js/variables.js"></script>
 		<script src="js/func__toggleMainMenu.js"></script>
+		<script src="js/func__changeSlide.js"></script>
 		<!-- <script src="js/func__.js"></script> -->
 	</body>
 </html>
