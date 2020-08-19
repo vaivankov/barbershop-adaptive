@@ -174,7 +174,7 @@
 						</li>
 					</ul>
 					<ul class="advantages__toggles slider__toggles">
-						<li class="advantages__toggle-wrapper">
+						<li class="slider__toggle-wrapper">
 							<label>
 								<input
 									class="slider__toggle visually-hidden"
@@ -188,11 +188,11 @@
 									data-target-description=".advantages__description"
 									checked
 								/>
-								<span class="slider__indicator"></span>
+								<span class="slider__indicator slider__indicator--white"></span>
 								<span class="visually-hidden">Преимущество 1</span>
 							</label>
 						</li>
-						<li class="advantages__toggle-wrapper">
+						<li class="slider__toggle-wrapper">
 							<label>
 								<input
 									class="slider__toggle visually-hidden"
@@ -205,11 +205,11 @@
 									data-target-title=".advantages__title"
 									data-target-description=".advantages__description"
 								/>
-								<span class="slider__indicator"></span>
+								<span class="slider__indicator slider__indicator--white"></span>
 								<span class="visually-hidden">Преимущество 2</span>
 							</label>
 						</li>
-						<li class="advantages__toggle-wrapper">
+						<li class="slider__toggle-wrapper">
 							<label>
 								<input
 									class="slider__toggle visually-hidden"
@@ -222,7 +222,7 @@
 									data-target-title=".advantages__title"
 									data-target-description=".advantages__description"
 								/>
-								<span class="slider__indicator"></span>
+								<span class="slider__indicator slider__indicator--white"></span>
 								<span class="visually-hidden">Преимущество 3</span>
 							</label>
 						</li>
@@ -273,25 +273,27 @@
 				</div>
 			</section>
 			<section class="reviews">
-				<h2 class="reviews__title">Отзывы о нас</h2>
 				<div class="reviews__wrapper slider">
+					<h2 class="reviews__title">Отзывы о нас</h2>
 					<a class="reviews__write button" href="#">Оставить свой</a>
 					<div class="reviews__list slider__list">
 						<blockquote class="reviews__item slider__item">
 							<p class="reviews__author-picture">
 								<img
 									class="reviews__author-image"
-									src="img/raster/picture-travis.jpg"
+									src="img/raster/photo-travis-mobile.png"
 									alt="Фото Трэвиса Баркера"
 									width="50"
 									height="33"
 								/>
 							</p>
-							<cite class="reviews__author-name">Трэвис Баркер</cite>
-							<p class="reviews__text">
-								Спасибо за лысину! Был проездом в Москве, заскочил побриться,
-								чтобы было видно новую татуировку!
-							</p>
+							<div class="reviews__text-wrapper">
+								<cite class="reviews__author-name">Трэвис Баркер</cite>
+								<p class="reviews__text">
+									Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+									чтобы было видно новую татуировку!
+								</p>
+							</div>
 						</blockquote>
 						<blockquote class="reviews__item slider__item">
 							<p class="reviews__author-picture">
@@ -321,36 +323,65 @@
 								В Бородинском ваша борода в надёжных руках!
 							</p>
 						</blockquote>
-						<button class="reviews__prev" type="button">
-							Предыдущий отзыв
+						<button class="reviews__prev button" type="button">
+							<span class="visually-hidden">Предыдущий отзыв</span>
 						</button>
-						<button class="reviews__next" type="button">Следующий отзыв</button>
+						<button class="reviews__next button" type="button">
+							<span class="visually-hidden">Следующий отзыв</span>
+						</button>
 					</div>
 					<ul class="reviews__toggles slider__toggles">
-						<li>
-							<input
-								class="slider__toggle"
-								name="reviews__slider-radio"
-								type="radio"
-								checked
-							/>
-							<span class="slider__indicator"></span>
+						<li class="slider__toggle-wrapper">
+							<label>
+								<input
+									class="slider__toggle visually-hidden"
+									name="reviews__slider-radio"
+									type="radio"
+									data-src="img/raster/photo-travis-mobile.png"
+									data-title="Трэвис Баркер"
+									data-description="Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!"
+									data-target-src=".reviews__author-image"
+									data-target-title=".reviews__author-name"
+									data-target-description=".reviews__text"
+									checked
+								/>
+								<span class="slider__indicator slider__indicator--black"></span>
+								<span class="visually-hidden">Отзыв 1</span>
+							</label>
 						</li>
-						<li>
-							<input
-								class="slider__toggle"
-								name="reviews__slider-radio"
-								type="radio"
-							/>
-							<span class="slider__indicator"></span>
+						<li class="slider__toggle-wrapper">
+							<label>
+								<input
+									class="slider__toggle visually-hidden"
+									name="reviews__slider-radio"
+									type="radio"
+									data-src="img/raster/no-image.png"
+									data-title="Джон Смит"
+									data-description="Отличную стрижку мне сделали ребята."
+									data-target-src=".reviews__author-image"
+									data-target-title=".reviews__author-name"
+									data-target-description=".reviews__text"
+								/>
+								<span class="slider__indicator slider__indicator--black"></span>
+								<span class="visually-hidden">Отзыв 2</span>
+							</label>
 						</li>
-						<li>
-							<input
-								class="slider__toggle"
-								name="reviews__slider-radio"
-								type="radio"
-							/>
-							<span class="slider__indicator"></span>
+						<li class="slider__toggle-wrapper">
+							<label>
+								<input
+									class="slider__toggle visually-hidden"
+									name="reviews__slider-radio"
+									type="radio"
+									data-src="img/raster/no-image.png"
+									data-title="Иван Бородайло"
+									data-description="В Бородинском ваша борода в надёжных руках!"
+									data-target-src=".reviews__author-image"
+									data-target-title=".reviews__author-name"
+									data-target-description=".reviews__text"
+								/>
+								<span class="slider__indicator slider__indicator--black"></span>
+								<span class="visually-hidden">Отзыв 3</span>
+							</label>
 						</li>
 					</ul>
 				</div>

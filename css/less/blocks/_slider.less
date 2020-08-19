@@ -13,17 +13,41 @@
   list-style: none;
 }
 
-.slider__toggle:checked + .slider__indicator {
-  background-color: @color-white;
-}
-
 .slider__indicator {
   display: block;
   width: 8px;
   height: 8px;
 
-  border: 1px solid @color-white;
   transform: rotate(45deg);
+}
+
+.slider__indicator--white {
+  border: 1px solid @color-white;
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+}
+
+.slider__toggle-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+}
+
+.slider__toggle:checked + .slider__indicator--white {
+  background-color: @color-white;
+}
+
+.slider__indicator--black {
+  border: 1px solid @color-black;
+}
+
+.slider__toggle:checked + .slider__indicator--black {
+  background-color: @color-black;
 }
 
 @media (min-width: @tablet-width) {
