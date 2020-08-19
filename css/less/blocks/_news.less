@@ -134,10 +134,12 @@
     margin-top: 20px;
   }
 
-  .news__item:not(:last-child) {
+  .news__item {
     width: 50%;
     padding-right: 30px;
+  }
 
+  .news__item:not(:last-child) {
     border-bottom: none;
   }
 
@@ -147,4 +149,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .news__wrapper {
+    width: 960px;
+  }
+
+  .news__item:last-child {
+    display: flex;
+  }
+
+  .news__header-wrapper {
+    padding-left: 70px;
+  }
 }
