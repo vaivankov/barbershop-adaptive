@@ -8,6 +8,9 @@
 }
 
 .slider__toggles {
+  position: relative;
+  z-index: 99;
+
   padding: 0;
 
   list-style: none;
@@ -15,8 +18,8 @@
 
 .slider__indicator {
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 
   transform: rotate(45deg);
 }
@@ -25,17 +28,12 @@
   border: 1px solid @color-white;
 }
 
-.slider__toggles {
-  display: flex;
-  justify-content: center;
-}
-
 .slider__toggle-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 40px;
+  width: 35px;
 }
 
 .slider__toggle:checked + .slider__indicator--white {
