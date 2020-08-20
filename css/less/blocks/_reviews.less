@@ -97,6 +97,8 @@
   .reviews__list {
     position: relative;
 
+    width: 540px;
+    margin: 0 auto;
     margin-top: 30px;
 
     border-top: 1px solid @color-black-opacity-30;
@@ -117,7 +119,7 @@
   .reviews__prev {
     position: absolute;
     top: -1px;
-    left: 0;
+    left: -50px;
 
     display: block;
     width: 50px;
@@ -129,7 +131,7 @@
   .reviews__next {
     position: absolute;
     top: -1px;
-    right: 0;
+    right: -50px;
 
     display: block;
     width: 50px;
@@ -152,4 +154,30 @@
 }
 
 @media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    width: 960px;
+  }
+
+  .reviews__list {
+    width: 800px;
+
+    border-right: 1px solid @color-black-opacity-30;
+    border-left: 1px solid @color-black-opacity-30;
+  }
+
+  .reviews__item {
+    min-height: 160px;
+  }
+
+  .reviews__next {
+    right: -80px;
+  }
+
+  .reviews__prev {
+    left: -80px;
+  }
+
+  .reviews__author-image {
+    border-radius: initial;
+  }
 }
