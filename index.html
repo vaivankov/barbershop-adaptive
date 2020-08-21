@@ -295,15 +295,30 @@
 					</div>
 					<div class="reviews__list slider__list">
 						<blockquote class="reviews__item slider__item">
-							<p class="reviews__author-picture">
+							<picture class="reviews__author-picture">
+								<source
+									media="(min-width:1200px)"
+									srcset="
+										img/raster/travis-desktop.jpg    1x,
+										img/raster/travis-desktop@2x.jpg 2x
+									"
+								/>
+								<source
+									media="(min-width:768px)"
+									srcset="
+										img/raster/travis-tablet.png    1x,
+										img/raster/travis-tablet@2x.png 2x
+									"
+								/>
 								<img
 									class="reviews__author-image"
-									src="img/raster/photo-travis-mobile.png"
+									src="img/raster/travis-mobile.png"
+									srcset="img/raster/travis-mobile@2x.png 2x"
 									alt="Фото Трэвиса Баркера"
 									width="50"
 									height="33"
 								/>
-							</p>
+							</picture>
 							<div class="reviews__text-wrapper">
 								<cite class="reviews__author-name">Трэвис Баркер</cite>
 								<p class="reviews__text">
@@ -356,7 +371,7 @@
 									class="slider__toggle visually-hidden"
 									name="reviews__slider-radio"
 									type="radio"
-									data-src="img/raster/photo-travis-mobile.png"
+									data-src="img/raster/no-image.png"
 									data-title="Трэвис Баркер"
 									data-description="Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!"
 									data-target-src=".reviews__author-image"

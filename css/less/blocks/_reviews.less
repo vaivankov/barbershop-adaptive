@@ -100,10 +100,10 @@
 
   .reviews__item {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 480px;
     min-height: 155px;
-    margin: 0 auto;
   }
 
   .reviews__list {
@@ -193,7 +193,11 @@
   }
 
   .reviews__item {
+    display: flex;
+    justify-content: flex-start;
+    width: 680px;
     min-height: 160px;
+    margin: 0;
   }
 
   .reviews__toggles {
@@ -208,7 +212,14 @@
     left: -70px;
   }
 
+  .reviews__author-picture {
+    display: flex;
+    margin-right: 70px;
+  }
+
   .reviews__author-image {
+    width: auto;
+
     border-radius: initial;
   }
 }
