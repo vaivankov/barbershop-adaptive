@@ -73,7 +73,7 @@
 		<main class="page-main page-main--inner">
 			<header class="page-title">
 				<h1 class="page-title__title">Наши работы</h1>
-				<a class="button" href="index.html">На главную</a>
+				<a class="button page-title__button" href="index.html">На главную</a>
 			</header>
 			<section class="works">
 				<div class="works-item works-item--work-of-month">
@@ -101,20 +101,23 @@
 							умеет никто другой! Еще раз спасибо и до скорого!
 						</blockquote>
 						<ul class="works-item__parameter-list">
-							<li
-								class="works-item__parameter-item works-item__parameter-item--haircut"
-							>
+							<li class="works-item__parameter-item">
+								<svg width="21" height="20" class="works-item__icon">
+									<use xlink:href="#icon-scissors"></use>
+								</svg>
 								Стрижка
 							</li>
-							<li
-								class="works-item__parameter-item works-item__parameter-item--shaving"
-							>
-								Бритьё
-							</li>
-							<li
-								class="works-item__parameter-item works-item__parameter-item--mustache"
-							>
+							<li class="works-item__parameter-item">
+								<svg width="45" height="13" class="works-item__icon">
+									<use xlink:href="#icon-mustaches"></use>
+								</svg>
 								Усы
+							</li>
+							<li class="works-item__parameter-item">
+								<svg width="22" height="21" class="works-item__icon">
+									<use xlink:href="#icon-beard"></use>
+								</svg>
+								Бритьё
 							</li>
 						</ul>
 					</div>
@@ -143,9 +146,10 @@
 							Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?
 						</blockquote>
 						<ul class="works-item__parameter-list">
-							<li
-								class="works-item__parameter-item works-item__parameter-item--haircut"
-							>
+							<li class="works-item__parameter-item">
+								<svg width="21" height="20" class="works-item__icon">
+									<use xlink:href="#icon-scissors"></use>
+								</svg>
 								Стрижка
 							</li>
 						</ul>
@@ -175,14 +179,16 @@
 							К зимнему сезону &ndash; готов!
 						</blockquote>
 						<ul class="works-item__parameter-list">
-							<li
-								class="works-item__parameter-item works-item__parameter-item--shaving"
-							>
+							<li class="works-item__parameter-item">
+								<svg width="22" height="21" class="works-item__icon">
+									<use xlink:href="#icon-beard"></use>
+								</svg>
 								Бритьё
 							</li>
-							<li
-								class="works-item__parameter-item works-item__parameter-item--mustache"
-							>
+							<li class="works-item__parameter-item">
+								<svg width="45" height="13" class="works-item__icon">
+									<use xlink:href="#icon-mustaches"></use>
+								</svg>
 								Усы
 							</li>
 						</ul>
@@ -213,9 +219,10 @@
 							в Бородинский!
 						</blockquote>
 						<ul class="works-item__parameter-list">
-							<li
-								class="works-item__parameter-item works-item__parameter-item--haircut"
-							>
+							<li class="works-item__parameter-item">
+								<svg width="21" height="20" class="works-item__icon">
+									<use xlink:href="#icon-scissors"></use>
+								</svg>
 								Стрижка
 							</li>
 						</ul>
@@ -226,43 +233,53 @@
 		<footer class="page-footer">
 			<h2 class="visually-hidden">Подвал сайта</h2>
 			<div class="page-footer__wrapper">
-				<div class="page-footer__contacts contacts">
-					<b class="contacts__title">Барбершоп «Бородинский»</b>
-					<p class="contacts__text">
-						г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br />
-						<a href="tel:+74954959595" class="contacts__phone">
-							<span class="contacts__phone-mobile">Тел.:</span>
+				<div class="page-footer__header-wrapper">
+					<div class="page-footer__contacts contacts">
+						<b class="contacts__title">Барбершоп «Бородинский»</b>
+						<p class="contacts__text">
+							г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br />
+							<a href="tel:+74954959595" class="contacts__phone">
+								<span class="contacts__phone-label">Тел.:</span>
+								+7 (495) 495-95-95
+							</a>
+						</p>
+					</div>
+					<div
+						class="page-footer__copyright page-footer__copyright--top copyright"
+					>
+						<span class="copyright__text">Вёрстка:</span>
+						<a href="https://github.com/vaivankov" class="copyright__link">
+							Виталий Иваньков
 						</a>
-						+7 (495) 495-95-95
-					</p>
+					</div>
 				</div>
+
 				<div class="page-footer__social social">
 					<b class="social__title">Давайте дружить!</b>
 					<ul class="social__list">
 						<li class="social__item">
 							<a class="social__link social__link--vkontakte" href="#">
-								Мы в Вконтакте
+								<span class="visually-hidden">Мы в Вконтакте</span>
 							</a>
 						</li>
 						<li class="social__item">
 							<a class="social__link social__link--facebook" href="#">
-								Мы в Фейсбуке
+								<span class="visually-hidden">Мы в Фейсбуке</span>
 							</a>
 						</li>
 						<li class="social__item">
 							<a class="social__link social__link--instagram" href="#">
-								Мы в Инстаграме
+								<span class="visually-hidden">Мы в Инстаграме</span>
 							</a>
 						</li>
 					</ul>
 				</div>
-				<div class="page-footer__copytight copytight">
-					<b class="copyright__text">Разработано:</b>
-					<a
-						href="https://htmlacademy.ru/intensive/adaptive"
-						class="button copyright__link"
-					>
-						HTML Academy
+				<div
+					class="page-footer__copyright page-footer__copyright--bottom copyright"
+				>
+					<span class="copyright__text">Вёрстка:</span>
+					<a href="https://github.com/vaivankov" class="copyright__link">
+						Виталий Иваньков
 					</a>
 				</div>
 			</div>
@@ -270,5 +287,25 @@
 		<script src="js/variables.js"></script>
 		<script src="js/func__toggleMainMenu.js"></script>
 		<!-- <script src="js/func__.js"></script> -->
+		<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+			<symbol id="icon-scissors" width="21" height="20" viewBox="0 0 21 20">
+				<path
+					fill="#826550"
+					d="M8 4a4 4 0 1 0-4 4 2.9 2.9 0 0 0 1.6-.4L8 10l-2.4 2.4A2.9 2.9 0 0 0 4 12a4 4 0 1 0 4 4 2.9 2.9 0 0 0-.4-1.6L10 12l7 7h4L7.6 5.6A2.9 2.9 0 0 0 8 4zM4 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm0 12a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm6-8.5a.5.5 0 1 1-.5.5.5.5 0 0 1 .5-.5zM21 1h-4l-6 6 2 2 8-8z"
+				/>
+			</symbol>
+			<symbol id="icon-beard" width="22" height="21" viewBox="0 0 22 21">
+				<path
+					fill="#826550"
+					d="M21.8 0h-.1c-1 3.3-1.3 7.3-4 8.8-.5-1.4-1.8-2.1-3.2-2.7A9.5 9.5 0 0 0 11.7 5a.9.9 0 0 0-.6.1.9.9 0 0 0-.7-.1 9.5 9.5 0 0 0-2.8 1.1c-1.4.6-2.7 1.3-3.2 2.7C1.6 7.3 1.3 3.3.4 0H.3A6.3 6.3 0 0 0 0 1a110.5 110.5 0 0 0 .8 12.2c.5 2.7 2.6 4.6 4.6 5.9S9 21.2 11 21.2s4.2-1.2 5.6-2.1 4.1-3.2 4.6-5.9A110.3 110.3 0 0 0 22.1 1a6.1 6.1 0 0 0-.3-1zm-6 12a1.8 1.8 0 0 1-1.4 1.5c-1.3.1-1.9-1.9-3.4-1.9s-2.1 1.9-3.4 1.9A1.8 1.8 0 0 1 6.2 12a3.2 3.2 0 0 1 .7-2.4 3.5 3.5 0 0 1 2-.5 3.7 3.7 0 0 0 2.1-.8 3.7 3.7 0 0 0 2.1.8 3.5 3.5 0 0 1 2 .5 3.2 3.2 0 0 1 .7 2.4z"
+				/>
+			</symbol>
+			<symbol id="icon-mustaches" width="45" height="13" viewBox="0 0 45 13">
+				<path
+					fill="#826550"
+					d="M22.5 8.2a10.5 10.5 0 0 0 8.8 4.7c7.1.3 13.7-5.2 13.7-7.3-2.8 2.5-7.4 2.7-10 1.7S31.9 2.8 29.2.9a5.1 5.1 0 0 0-5.7 0l-1 .8-1-.8a5.1 5.1 0 0 0-5.7 0c-2.8 2-2.1 4.9-5.9 6.4S2.8 8.1 0 5.6c0 2.1 6.5 7.6 13.7 7.3a10.5 10.5 0 0 0 8.8-4.7z"
+				/>
+			</symbol>
+		</svg>
 	</body>
 </html>

@@ -74,7 +74,14 @@
   height: 480px;
 }
 
+.works-item__title {
+  margin: 0;
+
+  font-size: 24px;
+}
+
 .works-item__text {
+  margin-top: 15px;
   margin-right: 0;
   margin-left: 0;
 }
@@ -102,39 +109,14 @@
 }
 
 .works-item__parameter-item {
-  position: relative;
-
   width: 118px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 }
 
-.works-item__parameter-item::before {
-  content: "";
-
-  display: inline-block;
-  width: 45px;
-  height: 21px;
+.works-item__icon {
+  margin-right: 10px;
 
   vertical-align: middle;
-
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.works-item__parameter-item--haircut::before {
-  background-image: url("../../../img/vector/scissors-icon.svg");
-}
-
-.works-item__parameter-item--shaving::before {
-  background-image: url("../../../img/vector/beard-icon.svg");
-}
-
-.works-item__parameter-item--mustache::before {
-  background-image: url("../../../img/vector/mustache-icon.svg");
-}
-
-.works-item__parameter-item--mustache:last-child {
-  margin-right: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -145,11 +127,16 @@
     padding: 0;
   }
 
+  .works-item__text {
+    margin-top: 27px;
+  }
+
   .works-item__review {
     flex-grow: 1;
+    padding-top: 40px;
     padding-right: 41px;
     padding-bottom: 19px;
-    padding-left: 41px;
+    padding-left: 49px;
   }
 
   .works-item__image-wrapper {
@@ -158,13 +145,13 @@
   }
 
   .works-item--work-of-month::before {
-    top: 35px;
+    top: 32px;
     bottom: auto;
     left: 0;
   }
 
   .works-item--work-of-month::after {
-    top: 35px;
+    top: 32px;
     bottom: auto;
     left: 160px;
   }
@@ -186,14 +173,20 @@
   }
 
   .works-item--work-of-month .works-item__review {
-    padding-top: 115px;
+    padding-top: 125px;
+    padding-left: 40px;
   }
 
   .works-item__title {
     margin-bottom: 0;
   }
 
+  .works-item__text {
+    font-size: 17px;
+  }
+
   .works-item:not(:first-child) .works-item__review {
+    padding-top: 25px;
     padding-right: 35px;
     padding-bottom: 10px;
     padding-left: 35px;
@@ -206,16 +199,22 @@
     padding-right: 85px;
   }
 
+  .works-item__parameter-list {
+    padding-bottom: 0;
+  }
+
   .works-item__parameter-item {
     width: auto;
-    margin-right: 35px;
+    margin-right: 25px;
   }
 
   .works-item--work-of-month::before {
+    top: 23px;
     left: 800px;
   }
 
   .works-item--work-of-month::after {
+    top: 23px;
     left: 784px;
 
     background-image: linear-gradient(
