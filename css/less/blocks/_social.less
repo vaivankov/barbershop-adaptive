@@ -28,6 +28,16 @@
   border: 1px solid @color-white-opacity-30;
 }
 
+.social__link:hover {
+  border: 1px solid @color-white;
+}
+
+.social__link:active {
+  background-color: @color-black;
+  border: 1px solid transparent;
+  opacity: 0.3;
+}
+
 .social__link--vkontakte {
   background-image: url("../../../img/vector/vk-icon.svg");
   background-size: 40px;
@@ -51,6 +61,7 @@
     display: block;
 
     text-align: center;
+    text-transform: uppercase;
   }
 
   .social__list {

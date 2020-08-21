@@ -16,6 +16,16 @@
   border: 1px solid @color-white-opacity-30;
 }
 
+.contacts__phone:hover {
+  border: 1px solid @color-white;
+}
+
+.contacts__phone:active {
+  background-color: @color-black;
+  border: 1px solid transparent;
+  opacity: 0.3;
+}
+
 .contacts__phone-label {
   display: none;
 }
@@ -38,6 +48,16 @@
     font-weight: normal;
 
     border: none;
+  }
+
+  .contacts__phone:hover {
+    border: none;
+  }
+
+  .contacts__phone:active {
+    background-color: initial;
+    border: none;
+    opacity: 0.3;
   }
 
   .contacts__phone-label {

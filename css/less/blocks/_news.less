@@ -58,11 +58,38 @@
   padding: 20px 0;
 }
 
+.news__item:hover {
+  cursor: pointer;
+}
+
+.news__item:hover .news__date-shield {
+  fill: @color-bg-main-nav;
+}
+
+.news__item:active .news__date {
+  color: @color-white-opacity-30;
+}
+
+.news__item:active .news__date-shield {
+  fill: @color-bg-main-nav-active;
+}
+
+.news__item:hover .news__text {
+  color: @color-bg-main-nav;
+  text-decoration: underline;
+}
+
+.news__item:active .news__text {
+  color: @color-bg-main-nav-active;
+}
+
 .news__item:not(:last-child) {
   border-bottom: 1px solid @color-black-opacity-30;
 }
 
 .news__date {
+  position: relative;
+
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
@@ -75,20 +102,32 @@
 
   font-size: 18px;
   color: @color-white;
+}
 
-  background-image: url("../../../img/vector/shield.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+.news__date-shield {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 50px;
+  height: 60px;
 }
 
 .news__day {
+  z-index: 2;
+
   font-size: 28px;
   line-height: 15px;
 }
 
+.news__month {
+  z-index: 2;
+}
+
 .news__text {
   margin: 0;
+
+  color: @color-black;
 }
 
 .news__to-all--top {
