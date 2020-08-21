@@ -55,8 +55,17 @@
 
 .reviews__author-picture {
   flex-shrink: 0;
+  width: 50px;
+  height: 49px;
   margin-top: 10px;
   margin-right: 20px;
+
+  background-color: @color-black-opacity-30;
+}
+
+.reviews__author-image {
+  width: 100%;
+  height: 100%;
 }
 
 .reviews__prev {
@@ -118,15 +127,16 @@
   }
 
   .reviews__author-picture {
+    width: 80px;
+    height: 80px;
     margin-top: 0;
     margin-right: 30px;
     margin-bottom: 0;
+
+    border-radius: 50%;
   }
 
   .reviews__author-image {
-    width: 80px;
-    height: auto;
-
     border-radius: 50%;
   }
 
@@ -196,7 +206,7 @@
     display: flex;
     justify-content: flex-start;
     width: 680px;
-    min-height: 160px;
+    height: 160px;
     margin: 0;
   }
 
@@ -214,12 +224,14 @@
 
   .reviews__author-picture {
     display: flex;
+    width: 249px;
+    height: 160px;
     margin-right: 70px;
+
+    border-radius: initial;
   }
 
   .reviews__author-image {
-    width: auto;
-
     border-radius: initial;
   }
 }

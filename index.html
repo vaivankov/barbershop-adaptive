@@ -181,15 +181,12 @@
 						<li class="slider__toggle-wrapper">
 							<label>
 								<input
-									class="slider__toggle visually-hidden"
+									class="advantages__slider slider__toggle visually-hidden"
 									name="advantages__slider-radio"
 									type="radio"
 									data-src="img/vector/advantage-1-illustration.svg"
 									data-title="Быстро"
 									data-description="Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы &ndash; счастливый обладатель стильной стрижки-минутки."
-									data-target-src=".advantages__icon"
-									data-target-title=".advantages__title"
-									data-target-description=".advantages__description"
 									checked
 								/>
 								<span class="slider__indicator slider__indicator--white"></span>
@@ -199,15 +196,12 @@
 						<li class="slider__toggle-wrapper">
 							<label>
 								<input
-									class="slider__toggle visually-hidden"
+									class="advantages__slider slider__toggle visually-hidden"
 									name="advantages__slider-radio"
 									type="radio"
 									data-src="img/vector/advantage-2-illustration.svg"
 									data-title="Круто"
 									data-description="Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. Во всяком случае внешне."
-									data-target-src=".advantages__icon"
-									data-target-title=".advantages__title"
-									data-target-description=".advantages__description"
 								/>
 								<span class="slider__indicator slider__indicator--white"></span>
 								<span class="visually-hidden">Преимущество 2</span>
@@ -216,15 +210,12 @@
 						<li class="slider__toggle-wrapper">
 							<label>
 								<input
-									class="slider__toggle visually-hidden"
+									class="advantages__slider slider__toggle visually-hidden"
 									name="advantages__slider-radio"
 									type="radio"
 									data-src="img/vector/advantage-3-illustration.svg"
 									data-title="Дорого"
 									data-description="Наши мастера &ndash; профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?"
-									data-target-src=".advantages__icon"
-									data-target-title=".advantages__title"
-									data-target-description=".advantages__description"
 								/>
 								<span class="slider__indicator slider__indicator--white"></span>
 								<span class="visually-hidden">Преимущество 3</span>
@@ -297,6 +288,7 @@
 						<blockquote class="reviews__item slider__item">
 							<picture class="reviews__author-picture">
 								<source
+									class="reviews__source-desktop"
 									media="(min-width:1200px)"
 									srcset="
 										img/raster/travis-desktop.jpg    1x,
@@ -304,19 +296,20 @@
 									"
 								/>
 								<source
+									class="reviews__source-tablet"
 									media="(min-width:768px)"
 									srcset="
-										img/raster/travis-tablet.png    1x,
-										img/raster/travis-tablet@2x.png 2x
+										img/raster/travis-tablet.jpg    1x,
+										img/raster/travis-tablet@2x.jpg 2x
 									"
 								/>
 								<img
 									class="reviews__author-image"
-									src="img/raster/travis-mobile.png"
-									srcset="img/raster/travis-mobile@2x.png 2x"
+									src="img/raster/travis-mobile.jpg"
+									srcset="img/raster/travis-mobile@2x.jpg 2x"
 									alt="Фото Трэвиса Баркера"
 									width="50"
-									height="33"
+									height="49"
 								/>
 							</picture>
 							<div class="reviews__text-wrapper">
@@ -328,28 +321,58 @@
 							</div>
 						</blockquote>
 						<blockquote class="reviews__item slider__item">
-							<p class="reviews__author-picture">
+							<picture class="reviews__author-picture">
+								<source
+									media="(min-width:1200px)"
+									srcset="
+										img/raster/john-desktop.jpg    1x,
+										img/raster/john-desktop@2x.jpg 2x
+									"
+								/>
+								<source
+									media="(min-width:768px)"
+									srcset="
+										img/raster/john-tablet.jpg    1x,
+										img/raster/john-tablet@2x.jpg 2x
+									"
+								/>
 								<img
 									class="reviews__author-image"
-									src="img/raster/no-image.png"
+									src="img/raster/john-mobile.jpg"
+									srcset="img/raster/john-mobile@2x.jpg 2x"
 									alt="Фото Джона Смита"
 									width="50"
-									height="33"
+									height="49"
 								/>
-							</p>
+							</picture>
 							<cite class="reviews__author-name">Джон Смит</cite>
 							<p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
 						</blockquote>
 						<blockquote class="reviews__item slider__item">
-							<p class="reviews__author-picture">
+							<picture class="reviews__author-picture">
+								<source
+									media="(min-width:1200px)"
+									srcset="
+										img/raster/ivan-desktop.jpg    1x,
+										img/raster/ivan-desktop@2x.jpg 2x
+									"
+								/>
+								<source
+									media="(min-width:768px)"
+									srcset="
+										img/raster/ivan-tablet.jpg    1x,
+										img/raster/ivan-tablet@2x.jpg 2x
+									"
+								/>
 								<img
 									class="reviews__author-image"
-									src="img/raster/no-image.png"
+									src="img/raster/ivan-mobile.jpg"
+									srcset="img/raster/ivan-mobile@2x.jpg 2x"
 									alt="Фото Ивана Бородайло"
 									width="50"
-									height="33"
+									height="49"
 								/>
-							</p>
+							</picture>
 							<cite class="reviews__author-name">Иван Бородайло</cite>
 							<p class="reviews__text">
 								В Бородинском ваша борода в надёжных руках!
@@ -368,15 +391,12 @@
 						<li class="slider__toggle-wrapper">
 							<label>
 								<input
-									class="slider__toggle visually-hidden"
+									class="reviews__slider slider__toggle visually-hidden"
 									name="reviews__slider-radio"
 									type="radio"
-									data-src="img/raster/no-image.png"
 									data-title="Трэвис Баркер"
+									data-name="travis"
 									data-description="Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!"
-									data-target-src=".reviews__author-image"
-									data-target-title=".reviews__author-name"
-									data-target-description=".reviews__text"
 									checked
 								/>
 								<span class="slider__indicator slider__indicator--black"></span>
@@ -386,15 +406,12 @@
 						<li class="slider__toggle-wrapper">
 							<label>
 								<input
-									class="slider__toggle visually-hidden"
+									class="reviews__slider slider__toggle visually-hidden"
 									name="reviews__slider-radio"
 									type="radio"
-									data-src="img/raster/no-image.png"
 									data-title="Джон Смит"
+									data-name="john"
 									data-description="Отличную стрижку мне сделали ребята."
-									data-target-src=".reviews__author-image"
-									data-target-title=".reviews__author-name"
-									data-target-description=".reviews__text"
 								/>
 								<span class="slider__indicator slider__indicator--black"></span>
 								<span class="visually-hidden">Отзыв 2</span>
@@ -403,15 +420,12 @@
 						<li class="slider__toggle-wrapper">
 							<label>
 								<input
-									class="slider__toggle visually-hidden"
+									class="reviews__slider slider__toggle visually-hidden"
 									name="reviews__slider-radio"
 									type="radio"
-									data-src="img/raster/no-image.png"
 									data-title="Иван Бородайло"
+									data-name="ivan"
 									data-description="В Бородинском ваша борода в надёжных руках!"
-									data-target-src=".reviews__author-image"
-									data-target-title=".reviews__author-name"
-									data-target-description=".reviews__text"
 								/>
 								<span class="slider__indicator slider__indicator--black"></span>
 								<span class="visually-hidden">Отзыв 3</span>
@@ -477,7 +491,8 @@
 		</footer>
 		<script src="js/variables.js"></script>
 		<script src="js/func__toggleMainMenu.js"></script>
-		<script src="js/func__changeSlide.js"></script>
+		<script src="js/func__changeAdvantagesSlide.js"></script>
+		<script src="js/func__changeReviewsSlide.js"></script>
 		<!-- <script src="js/func__.js"></script> -->
 		<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
 			<symbol id="shield" width="50" height="60" viewBox="0 0 50 60">
