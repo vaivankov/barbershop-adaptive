@@ -1,0 +1,79 @@
+// main: ../../style.less
+
+.price-list {
+  color: @color-white;
+
+  background-color: @color-pad-3;
+}
+
+.price-list__content {
+  width: 320px;
+  margin: 0 auto;
+  padding: 50px 20px 50px 20px;
+}
+
+.price-list__title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.table {
+  width: 100%;
+
+  border-collapse: collapse;
+  font-size: 20px;
+}
+
+.table td {
+  padding-bottom: 15px;
+}
+
+.table__cell-number {
+  display: none;
+}
+
+.table__cell-addon {
+  display: none;
+}
+
+.table__cell-price {
+  vertical-align: top;
+  text-align: right;
+}
+
+.price-list__time-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  margin-top: 15px;
+
+  border: 1px solid @color-white-opacity-30;
+}
+
+.price-list__image {
+  width: 60px;
+  margin-right: 40px;
+}
+
+.price-list__text {
+  width: 120px;
+
+  font-size: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .price-list__block-wrapper {
+  }
+
+  .price-list__table {
+  }
+
+  .table__cell-service {
+  }
+}
+
+@media (min-width: @desktop-width) {
+}
