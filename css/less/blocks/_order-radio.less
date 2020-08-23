@@ -1,0 +1,15 @@
+// main: ../../style.less
+
+.order-radio:checked + .form__radio-indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 17px;
+  height: 17px;
+
+  border: 1px solid @color-black-opacity-30;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
