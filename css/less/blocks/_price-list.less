@@ -108,6 +108,8 @@
   }
 
   .table__cell-price {
+    width: 160px;
+
     vertical-align: middle;
     text-align: left;
   }
@@ -134,4 +136,44 @@
 }
 
 @media (min-width: @desktop-width) {
+  .price-list__content {
+    width: 960px;
+    padding: 50px 0 80px 0;
+  }
+
+  .price-list__block-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .table {
+    flex-shrink: 0;
+    width: 640px;
+  }
+
+  .price-list__time-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    width: 270px;
+    height: auto;
+    margin-top: 0;
+    padding: 25px 0;
+
+    text-align: center;
+  }
+
+  .price-list__image {
+    width: 140px;
+    margin-right: 0;
+  }
+
+  .price-list__text {
+    width: 130px;
+    margin-top: 30px;
+
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: none;
+  }
 }
