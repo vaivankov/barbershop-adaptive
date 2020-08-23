@@ -13,6 +13,8 @@
 }
 
 .price-list__title {
+  margin-bottom: 10px;
+
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -21,12 +23,9 @@
 .table {
   width: 100%;
 
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 15px;
   font-size: 20px;
-}
-
-.table td {
-  padding-bottom: 15px;
 }
 
 .table__cell-number {
@@ -65,13 +64,72 @@
 }
 
 @media (min-width: @tablet-width) {
-  .price-list__block-wrapper {
+  .price-list__content {
+    width: 640px;
+    padding: 60px 0 50px 0;
   }
 
-  .price-list__table {
+  .price-list__title {
+    margin-bottom: 55px;
+
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .table {
+    border-collapse: collapse;
+  }
+
+  .table td {
+    padding: 14px 20px;
+
+    border: 1px solid @color-white-opacity-30;
+  }
+
+  .table__cell-number {
+    display: table-cell;
+    width: 70px;
+
+    text-align: center;
+    color: @color-white-opacity-30;
   }
 
   .table__cell-service {
+    width: 250px;
+  }
+
+  .table__cell-addon {
+    display: table-cell;
+    width: 160px;
+  }
+
+  .table__cell-subline {
+    display: none;
+  }
+
+  .table__cell-price {
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  .price-list__time-wrapper {
+    justify-content: flex-start;
+    height: 115px;
+    margin-top: 10px;
+    padding: 0 30px;
+  }
+
+  .price-list__image {
+    width: 70px;
+    margin-right: 85px;
+  }
+
+  .price-list__text {
+    width: auto;
+
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
   }
 }
 
