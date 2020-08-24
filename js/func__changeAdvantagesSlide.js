@@ -2,11 +2,11 @@
 
 (function () {
 	window.changeAdvantagesSlide = function () {
-		let targetSrc = document.querySelector(".advantages__icon");
+		let targetSVG = document.querySelector(".advantages__icon");
 		let targetTitle = document.querySelector(".advantages__title");
 		let targetDescription = document.querySelector(".advantages__description");
 
-		targetSrc.src = this.dataset.src;
+		targetSVG.innerHTML = `<use xlink:href="${this.dataset.svg}"></use>`;
 		targetTitle.innerHTML = this.dataset.title;
 		targetDescription.innerHTML = this.dataset.description;
 	};
