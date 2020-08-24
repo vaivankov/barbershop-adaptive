@@ -101,6 +101,14 @@
   border: 1px solid @color-black-opacity-30;
 }
 
+.form__checkbox-label:hover .form__checkbox-indicator {
+  border: 1px solid @color-black;
+}
+
+.form__checkbox-label:active .form__checkbox-indicator {
+  background-color: @color-black-opacity-30;
+}
+
 .form__list-item {
   margin: 0 0 20px 0;
 }
@@ -194,4 +202,45 @@
 }
 
 @media (min-width: @desktop-width) {
+  .form {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .form__name-wrapper {
+    justify-content: space-between;
+  }
+
+  .form__name-wrapper .input {
+    width: 295px;
+  }
+
+  .form__contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__contacts-wrapper .input {
+    width: 460px;
+  }
+
+  .form__contacts-wrapper .input:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .form__model {
+    margin-top: 35px;
+    padding: 0 30px;
+  }
+
+  .form__list-item {
+    width: 320px;
+  }
+
+  .form__submit {
+    height: 70px;
+    margin-top: 40px;
+
+    font-size: 24px;
+  }
 }
