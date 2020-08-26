@@ -1,0 +1,52 @@
+{
+  "name": "barbershop-adaptive",
+  "version": "1.0.0",
+  "description": "Проект адаптивного сайта Барбершоп «Бородинский»",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaivankov/barbershop-adaptive.git"
+  },
+  "author": "vaivankov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaivankov/barbershop-adaptive/issues"
+  },
+  "homepage": "https://github.com/vaivankov/barbershop-adaptive#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "autoprefixer": "latest",
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp-csso": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-less": "latest",
+    "gulp-plumber": "latest",
+    "gulp-postcss": "latest",
+    "gulp-posthtml": "latest",
+    "gulp-rename": "latest",
+    "gulp-svgstore": "latest",
+    "gulp-webp": "latest",
+    "posthtml-include": "latest",
+    "@htmlacademy/editorconfig-cli": "latest",
+    "stylelint": "latest",
+    "stylelint-config-htmlacademy": "latest"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "src/*.html",
+    "src/js/**/*.js",
+    "src/img/**/*.svg",
+    "src/less/**/*.less"
+  ],
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "test": "npm run editorconfig && npm run stylelint 'src/less/**/*.less' --syntax less",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  }
+}

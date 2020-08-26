@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Барбершоп «Бородинский»</title>
+  </head>
+  <body>
+    <h1 class="visually-hidden">Сайт Барбершопа «Бородинский»</h1>
+    <header class="page-header page-header--inner">
+      <h2 class="visually-hidden">Шапка сайта</h2>
+      <a class="page-header__logo">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width:768px)" srcset="img/logotype-tablet.svg">
+          <img class="page-header__logo-mage" src="img/logotype-mobile.svg" width="226" height="30" alt="Логотип Барбершопа «Бородинский»">
+        </picture>
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Работы</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>Записаться</a>
+            </li>
+            <li class="site-list__item"><a href="#">Контакты</a></li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="login.html" class="user-list__login">
+                <svg class="user-list__login-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                  <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"></polygon>
+                  <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"></polygon>
+                </svg>
+                Войти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main page-main--inner">
+      <header class="page-title">
+        <h2 class="page-title__title">Запись на стрижку</h2>
+        <a class="button page-title__button" href="index.html">На главную</a>
+      </header>
+      <section class="order">
+        <h2 class="visually-hidden">Форма заказа стрижки</h2>
+        <form action="https://echo.htmlacademy.ru" class="form">
+          <fieldset class="form__info">
+            <div class="form__name-wrapper">
+              <input class="input input--order" name="name" type="text" placeholder="Имя">
+              <input class="input input--order" name="surname" type="text" placeholder="Фамилия" required="">
+              <input class="input input--order" name="patronymic" type="text" placeholder="Отчество">
+            </div>
+            <div class="form__contacts-wrapper">
+              <input class="input input--order" name="phone" type="tel" placeholder="Контактный телефон" required="">
+              <input class="input input--order" name="email" type="email" placeholder="Контактный e-mail">
+            </div>
+            <textarea class="input input--textarea" name="message" cols="30" rows="10" placeholder="Дополнительная информация для мастера"></textarea>
+          </fieldset>
+          <fieldset class="form__model">
+            <legend class="form__title">Выберите модель бороды:</legend>
+            <div class="form__radio-list">
+              <label class="form__radio-label">
+                <input class="order-radio visually-hidden" name="beard-shape" value="admiral" type="radio" checked="">
+                <span class="form__radio-indicator"></span>
+                <span class="form__radio-text"> адмирал </span>
+                <svg width="51.5" height="49.5" viewBox="0 0 51.5 49.5">
+                  <use xlink:href="#beard-1"></use>
+                </svg>
+              </label>
+              <label class="form__radio-label">
+                <input class="order-radio visually-hidden" name="beard-shape" type="radio" value="lumberjack">
+                <span class="form__radio-indicator"></span>
+                <span class="form__radio-text"> лесоруб </span>
+                <svg width="57.7" height="68.6" viewBox="0 0 57.7 68.6">
+                  <use xlink:href="#beard-2"></use>
+                </svg>
+              </label>
+              <label class="form__radio-label">
+                <input class="order-radio visually-hidden" name="beard-shape" type="radio" value="polar-explorer">
+                <span class="form__radio-indicator"></span>
+                <span class="form__radio-text"> полярник </span>
+                <svg width="62.4" height="78.5" viewBox="0 0 62.4 78.5">
+                  <use xlink:href="#beard-3"></use>
+                </svg>
+              </label>
+              <label class="form__radio-label">
+                <input class="order-radio visually-hidden" name="beard-shape" type="radio" value="boyar">
+                <span class="form__radio-indicator"></span>
+                <span class="form__radio-text"> боярин </span>
+                <svg width="57" height="97.7" viewBox="0 0 57 97.7">
+                  <use xlink:href="#beard-4"></use>
+                </svg>
+              </label>
+              <label class="form__radio-label">
+                <input class="order-radio visually-hidden" name="beard-shape" type="radio" value="sage">
+                <span class="form__radio-indicator"></span>
+                <span class="form__radio-text"> мудрец </span>
+                <svg width="44.7" height="104.8" viewBox="0 0 44.7 104.8">
+                  <use xlink:href="#beard-5"></use>
+                </svg>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__services">
+            <legend class="form__title">Дополнительные услуги:</legend>
+            <ul class="form__checkbox-list">
+              <li class="form__list-item">
+                <label class="form__checkbox-label">
+                  <input class="order-checkbox visually-hidden" name="paint-beard" type="checkbox" checked="">
+                  <span class="form__checkbox-indicator"></span>
+                  <span class="form__checkbox-text">Покрасить бороду</span>
+                </label>
+              </li>
+              <li class="form__list-item">
+                <label class="form__checkbox-label">
+                  <input class="order-checkbox visually-hidden" name="twist-mustache" type="checkbox" checked="">
+                  <span class="form__checkbox-indicator"></span>
+                  <span class="form__checkbox-text">Накрутить усы</span>
+                </label>
+              </li>
+              <li class="form__list-item">
+                <label class="form__checkbox-label">
+                  <input class="order-checkbox visually-hidden" name="comb-beard" type="checkbox">
+                  <span class="form__checkbox-indicator"></span>
+                  <span class="form__checkbox-text">Причесать бороду</span>
+                </label>
+              </li>
+              <li class="form__list-item">
+                <label class="form__checkbox-label">
+                  <input class="order-checkbox visually-hidden" name="shave-temple" type="checkbox">
+                  <span class="form__checkbox-indicator"></span>
+                  <span class="form__checkbox-text">Подровнять виски</span>
+                </label>
+              </li>
+              <li class="form__list-item">
+                <label class="form__checkbox-label">
+                  <input class="order-checkbox visually-hidden" name="remove-gray-hair" type="checkbox">
+                  <span class="form__checkbox-indicator"></span>
+                  <span class="form__checkbox-text">Убрать седину</span>
+                </label>
+              </li>
+              <li class="form__list-item">
+                <label class="form__checkbox-label">
+                  <input class="order-checkbox visually-hidden" name="polish-bald-head" type="checkbox">
+                  <span class="form__checkbox-indicator"></span>
+                  <span class="form__checkbox-text">Отполировать лысину</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="form__submit button button--submit" type="submit">
+            Отправить заявку
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <h2 class="visually-hidden">Подвал сайта</h2>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__header-wrapper">
+          <div class="page-footer__contacts contacts">
+            <b class="contacts__title">Барбершоп «Бородинский»</b>
+            <p class="contacts__text">
+              г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br>
+              <a href="tel:+74954959595" class="contacts__phone">
+                <span class="contacts__phone-label">Тел.:</span>
+                +7 (495) 495-95-95
+              </a>
+            </p>
+          </div>
+          <div class="page-footer__copyright page-footer__copyright--top copyright">
+            <span class="copyright__text">Вёрстка:</span>
+            <a href="https://github.com/vaivankov" class="copyright__link">
+              Виталий Иваньков
+            </a>
+          </div>
+        </div>
+
+        <div class="page-footer__social social">
+          <b class="social__title">Давайте дружить!</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">
+                <span class="visually-hidden">Мы в Вконтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <span class="visually-hidden">Мы в Инстаграме</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright page-footer__copyright--bottom copyright">
+          <span class="copyright__text">Вёрстка:</span>
+          <a href="https://github.com/vaivankov" class="copyright__link">
+            Виталий Иваньков
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal--login">
+      <h2 class="modal__title">Личный кабинет</h2>
+      <p class="modal__description">Введите свой логин и пароль</p>
+      <form class="modal__form" method="POST" action="https://echo.htmlacademy.ru">
+        <p class="modal__line modal__line--login">
+          <label class="visually-hidden" for="user-login">Логин</label>
+          <input class="input modal__user-icon" id="user-login" type="text" name="login" placeholder="email@example.com" required="">
+        </p>
+        <p class="modal__line modal__line--password">
+          <label class="visually-hidden" for="user-password">Пароль</label>
+          <input class="input modal__password-icon" id="user-password" type="password" name="password" placeholder="••••••••••••" required="">
+        </p>
+        <p class="modal__line modal__line--remember">
+          <label class="modal__checkbox-label">
+            <input class="modal__remember-checkbox visually-hidden" type="checkbox" name="remember">
+            <span class="modal__checkbox-indicator"></span>
+            Запомнить меня
+          </label>
+          <a class="modal__restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button modal__button" type="submit">Войти</button>
+      </form>
+      <button class="modal__close modal__close--login" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </div>
+    <script src="js/variables.js"></script>
+    <script src="js/func__toggleMainMenu.js"></script>
+    <script src="js/func__checkIsHotKey.js"></script>
+    <script src="js/func__showModalWindow.js"></script>
+    <script src="js/func__closeModalWindow.js"></script>
+    <script src="js/func__validateForm.js"></script>
+    <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="beard-1">
+        <path fill="#826550" d="M50.8 0h-.2c-2.3 7.7-2.9 17.1-9.4 20.6-1.2-3.4-4.1-4.9-7.4-6.4s-4.5-2.6-6.6-2.6a2.2 2.2 0 0 0-1.5.3 2.2 2.2 0 0 0-1.5-.3c-2.1.1-4.5 1.7-6.6 2.6s-6.2 3-7.4 6.4C3.8 17 3.1 7.7.8 0H.6A14.5 14.5 0 0 0 0 2.4c0 1.9.5 21.5 1.9 28.4S8 41.6 12.7 44.6s8.5 4.8 13 4.8 9.7-2.8 13-4.8 9.6-7.5 10.8-13.8 1.9-26.5 1.9-28.4a14.5 14.5 0 0 0-.6-2.4zM36.9 28c-.2 1.6-1.7 3.4-3.4 3.5s-4.5-4.4-7.9-4.4-4.9 4.5-7.9 4.4-3.1-1.9-3.4-3.5a7.6 7.6 0 0 1 1.7-5.6c1.1-1.1 2.8-.9 4.7-1.2a8.6 8.6 0 0 0 4.9-1.9 8.6 8.6 0 0 0 4.9 1.9c1.9.3 3.6.1 4.7 1.2a7.6 7.6 0 0 1 1.7 5.6z"></path>
+      </symbol>
+      <symbol id="beard-2">
+        <path fill="#826550" d="M51.6 22.2c.1-1.7.5-3.5.7-5.4.7-5.4 1.6-11.7-.1-16.8H52c-1.3 3.7-1.3 8.3-2.2 12.4a19.7 19.7 0 0 1-3.2 7.6 4.4 4.4 0 0 1-1.9 1.7c-.7-3.9-4.3-4.9-7.7-6.4s-4-2-6.1-2.2a10.8 10.8 0 0 0-2 .2 10.6 10.6 0 0 0-2-.2c-2.1.1-4 1.3-6.1 2.2s-7 2.4-7.7 6.4a4.4 4.4 0 0 1-1.9-1.8A19.7 19.7 0 0 1 8 12.3c-.9-4-.8-8.6-2.2-12.4h-.3C3.8 5 4.7 11.3 5.4 16.7c.2 1.9.6 3.7.7 5.4.8 11.1-7 23.1-6 28.9.9 7.5 8.4 9.4 14.2 12.4s8.3 5 13.3 5.2h2.6c5-.2 9-2.9 13.3-5.2s13.2-4.7 14.1-12.3c1-5.8-6.8-17.8-6-28.9zM28.9 26a35.9 35.9 0 0 1-7.2-.5c.7-2.1 4-1.6 7.1-1.6h.2c3 0 6.4-.5 7.1 1.6a36 36 0 0 1-7.2.5z"></path>
+      </symbol>
+      <symbol id="beard-3">
+        <path fill="#826550" d="M62.4 42c0-5.2-2.4-7.8-3.6-10a56 56 0 0 1-4.2-17.6C54.5 9.5 52.9 2 51.7 0c-.9 0-1.5 7.8-2.3 11.6-1.4 7-3.8 8.9-4.4 9-.8-2.8-4.1-7.4-13.7-7.7h-.2c-9.6.4-12.9 4.9-13.7 7.7-.7-.1-3-2-4.4-9C12.2 7.7 11.6 0 10.7 0 9.5 2 7.9 9.5 7.8 14.4A56.1 56.1 0 0 1 3.6 32C2.4 34.2 0 36.7 0 42s5.2 7.2 5.6 11.4c.1 1.2 0 2.3.1 3.4 2 17.5 17.9 21.7 25.4 21.7 7.6 0 23.4-4.2 25.4-21.7.2-1 0-2.1.1-3.4.6-4.2 5.8-7.6 5.8-11.4zM33.2 26.8a20.6 20.6 0 0 0-4.1 0c-1.7.3-5.8 1-5.8-1.1s6.7-2.3 7.8-2.3 7.8 1.2 7.8 2.3-3.9 1.4-5.7 1.1z"></path>
+      </symbol>
+      <symbol id="beard-4">
+        <path fill="#826550" d="M51.1 15.3c-.4-5.5-.6-10.9-2.5-15.2-.8 0-1.5 7.3-2.3 10.9-1.5 7.1-3.7 8.3-4.4 8.3-.9-3.9-4.4-4.2-7.8-5.9a11.1 11.1 0 0 0-3.6-1.2 14.6 14.6 0 0 0-2 .1 14.4 14.4 0 0 0-2-.1 11.1 11.1 0 0 0-3.6 1.2c-3.4 1.6-6.9 2-7.8 5.9-.7 0-3-1.1-4.4-8.3C10 7.4 9.2.1 8.4.1 6.5 4.5 6.3 9.9 5.9 15.3 5 38.8 0 51.6 0 62.5c0 26.1 11.7 35.3 28.5 35.3S57 88.6 57 62.5c0-10.9-5-23.7-5.9-47.2zM34.4 25c-2.8 1.2-5.4-.7-5.9-.7h-.1c-.5 0-3.1 1.9-5.9.7-.8-3.6 2.4-4 5.9-3.9s6.8.3 6 3.9z"></path>
+      </symbol>
+      <symbol id="beard-5">
+        <path fill="#826550" d="M43.4 0h-.1c-2.8 21.5-5.4 22.6-7 22.7s-3.6-1.8-4.9-2.5a15.9 15.9 0 0 0-9.1-2.6 15.9 15.9 0 0 0-9.1 2.5c-1.3.7-3.5 2.6-4.9 2.5s-4.1-1.2-7-22.7C-.8 12.1-.3 50.1 2.5 63.5 5.1 82 12.6 98.6 15.9 103.1c.7 1 3.5 1.6 6.4 1.6s5.7-.5 6.4-1.6C32 98.6 39.5 82 42.1 63.5 45 50.2 45.5 12.2 43.4 0zM22.3 28.1a100.2 100.2 0 0 0-10.1.5c1.1-1.8 9-3.2 10.1-3.4s9 1.7 10.1 3.4a100.2 100.2 0 0 0-10.1-.5z"></path>
+      </symbol>
+    </svg>
+  </body>
+</html>

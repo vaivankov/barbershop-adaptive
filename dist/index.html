@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Барбершоп «Бородинский»</title>
+	</head>
+	<body>
+		<h1 class="visually-hidden">Сайт Барбершопа «Бородинский»</h1>
+		<header class="page-header">
+			<h2 class="visually-hidden">Шапка сайта</h2>
+			<a class="page-header__logo">
+				<picture>
+					<source media="(min-width:1200px)" srcset="img/vector/logotype-desktop.svg">
+					<source media="(min-width:768px)" srcset="img/vector/logotype-tablet.svg">
+					<img class="page-header__logo-mage" src="img/vector/logotype-mobile.svg" width="226" height="30" alt="Логотип Барбершопа «Бородинский»">
+				</picture>
+			</a>
+			<nav class="main-nav main-nav--closed main-nav--nojs">
+				<button class="main-nav__toggle" type="button">
+					<span class="visually-hidden">Открыть меню</span>
+				</button>
+				<div class="main-nav__wrapper">
+					<ul class="main-nav__list site-list">
+						<li class="site-list__item site-list__item--active">
+							<a>Главная</a>
+						</li>
+						<li class="site-list__item">
+							<a href="photo.html">Работы</a>
+						</li>
+						<li class="site-list__item"><a href="form.html">Записаться</a></li>
+						<li class="site-list__item"><a href="#">Контакты</a></li>
+						<li class="site-list__item">
+							<a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+						</li>
+					</ul>
+					<ul class="main-nav__list user-list">
+						<li class="user-list__item">
+							<a href="login.html" class="user-list__login">
+								<svg class="user-list__login-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+									<polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"></polygon>
+									<polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"></polygon>
+								</svg>
+								Войти</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main class="page-main">
+			<section class="stats">
+				<h2 class="visually-hidden">Статистика работы Барбершопа</h2>
+				<header class="stats__header">
+					<b class="stats__slogan">Стрижка у нас <br>
+						это выгодно!</b>
+					<p class="stats__intro">
+						Мужская стрижка требует точного подхода. Обратимся к статистике:
+					</p>
+					<small class="stats__legend stats__legend--top">
+						<sup>*</sup> &ndash; приведённые данные ложь
+					</small>
+				</header>
+				<table class="stats__list">
+					<tr>
+						<td class="stats__value">1 500<sup>*</sup></td>
+						<td class="stats__field">
+							рублей <br>
+							вложений
+						</td>
+					</tr>
+					<tr>
+						<td class="stats__value">7 200</td>
+						<td class="stats__field">
+							секунд <br>
+							времени мастера
+						</td>
+					</tr>
+					<tr>
+						<td class="stats__value">90 000</td>
+						<td class="stats__field">
+							постриженных <br>
+							волос
+						</td>
+					</tr>
+					<tr>
+						<td class="stats__value">500 000<sup>*</sup></td>
+						<td class="stats__field">
+							лайков и <br>
+							комплиментов
+						</td>
+					</tr>
+				</table>
+				<small class="stats__legend stats__legend--bottom">
+					<sup>*</sup> &ndash; приведённые данные ложь
+				</small>
+			</section>
+			<section class="advantages">
+				<h2 class="visually-hidden">Наши преимущества</h2>
+				<div class="advantages__wrapper slider">
+					<ul class="advantages__list slider__list">
+						<li class="advantages__item slider__item">
+							<svg class="advantages__icon" width="100" height="100" viewBox="0 0 100 100">
+								<use xlink:href="#icon-scissors"></use>
+							</svg>
+							<div class="advantages__text">
+								<b class="advantages__title">Быстро</b>
+								<p class="advantages__description">
+									Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы
+									&ndash; счастливый обладатель стильной стрижки-минутки
+								</p>
+							</div>
+						</li>
+						<li class="advantages__item slider__item">
+							<svg class="advantages__icon" width="100" height="100" viewBox="0 0 100 100">
+								<use xlink:href="#icon-chair"></use>
+							</svg>
+							<div class="advantages__text">
+								<b class="advantages__title">Круто</b>
+								<p class="advantages__description">
+									Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду
+									футбола или кино. Во всяком случае внешне.
+								</p>
+							</div>
+						</li>
+						<li class="advantages__item slider__item">
+							<svg class="advantages__icon" width="100" height="100" viewBox="0 0 100 100">
+								<use xlink:href="#icon-candy-bowl"></use>
+							</svg>
+							<div class="advantages__text">
+								<b class="advantages__title">Дорого</b>
+								<p class="advantages__description">
+									Наши мастера &ndash; профессионалы своего дела и не могут
+									стоить дёшево. К тому же, разве цена не даёт определённый
+									статус?
+								</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="advantages__toggles slider__toggles">
+						<li class="slider__toggle-wrapper">
+							<label>
+								<input class="advantages__slider slider__toggle visually-hidden" name="advantages__slider-radio" type="radio" data-svg="#icon-scissors" data-title="Быстро" data-description="Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы &ndash; счастливый обладатель стильной стрижки-минутки." checked="">
+								<span class="slider__indicator slider__indicator--white"></span>
+								<span class="visually-hidden">Преимущество 1</span>
+							</label>
+						</li>
+						<li class="slider__toggle-wrapper">
+							<label>
+								<input class="advantages__slider slider__toggle visually-hidden" name="advantages__slider-radio" type="radio" data-svg="#icon-chair" data-title="Круто" data-description="Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино. Во всяком случае внешне.">
+								<span class="slider__indicator slider__indicator--white"></span>
+								<span class="visually-hidden">Преимущество 2</span>
+							</label>
+						</li>
+						<li class="slider__toggle-wrapper">
+							<label>
+								<input class="advantages__slider slider__toggle visually-hidden" name="advantages__slider-radio" type="radio" data-svg="#icon-candy-bowl" data-title="Дорого" data-description="Наши мастера &ndash; профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?">
+								<span class="slider__indicator slider__indicator--white"></span>
+								<span class="visually-hidden">Преимущество 3</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="news">
+				<div class="news__wrapper">
+					<div class="news__header-wrapper">
+						<h2 class="news__title">Новости и акции</h2>
+						<a class="news__to-all news__to-all--top button" href="#">Показать все</a>
+					</div>
+					<ul class="news__list">
+						<li class="news__item">
+							<time class="news__date" datetime="2017-09-29">
+								<svg class="news__date-shield" width="50" height="60" viewBox="0 0 50 60">
+									<use xlink:href="#icon-shield"></use>
+								</svg>
+								<b class="news__day">29</b>
+								<span class="news__month">сент</span>
+							</time>
+							<a class="news__text" href="#">
+								Нам наконец завезли Ягермайстер! Теперь вы можете пропусить
+								стаканчик во время стрижки.
+							</a>
+						</li>
+						<li class="news__item">
+							<time class="news__date" datetime="2017-09-19">
+								<svg class="news__date-shield" width="50" height="60" viewBox="0 0 50 60">
+									<use xlink:href="#icon-shield"></use>
+								</svg>
+								<b class="news__day">19</b>
+								<span class="news__month">сент</span>
+							</time>
+							<a class="news__text" href="#">
+								В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил
+								наши стройные ряды. Спешите записаться!
+							</a>
+						</li>
+						<li class="news__item">
+							<time class="news__date" datetime="2017-09-09">
+								<svg class="news__date-shield" width="50" height="60" viewBox="0 0 50 60">
+									<use xlink:href="#icon-shield"></use>
+								</svg>
+								<b class="news__day">09</b>
+								<span class="news__month">сент</span>
+							</time>
+							<a class="news__text" href="#">
+								Все дорожает, а наши стрижки нет! Как так? Приходите,
+								постригитесь и узнаете, в чем здесь подвох!
+							</a>
+						</li>
+					</ul>
+					<a class="news__to-all news__to-all--bottom button" href="#">Показать все</a>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__wrapper slider">
+					<div class="reviews__header-wrapper">
+						<h2 class="reviews__title">Отзывы о нас</h2>
+						<a class="reviews__write button" href="#">Оставить свой</a>
+					</div>
+					<div class="reviews__list slider__list">
+						<blockquote class="reviews__item slider__item">
+							<picture class="reviews__author-picture">
+								<source class="reviews__source-desktop" media="(min-width:1200px)" srcset="
+										img/raster/travis-desktop.jpg    1x,
+										img/raster/travis-desktop@2x.jpg 2x
+									">
+								<source class="reviews__source-tablet" media="(min-width:768px)" srcset="
+										img/raster/travis-tablet.jpg    1x,
+										img/raster/travis-tablet@2x.jpg 2x
+									">
+								<img class="reviews__author-image" src="img/raster/travis-mobile.jpg" srcset="img/raster/travis-mobile@2x.jpg 2x" alt="Фото Трэвиса Баркера" width="50" height="49">
+							</picture>
+							<div class="reviews__text-wrapper">
+								<cite class="reviews__author-name">Трэвис Баркер</cite>
+								<p class="reviews__text">
+									Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+									чтобы было видно новую татуировку!
+								</p>
+							</div>
+						</blockquote>
+						<blockquote class="reviews__item slider__item">
+							<picture class="reviews__author-picture">
+								<source media="(min-width:1200px)" srcset="
+										img/raster/john-desktop.jpg    1x,
+										img/raster/john-desktop@2x.jpg 2x
+									">
+								<source media="(min-width:768px)" srcset="
+										img/raster/john-tablet.jpg    1x,
+										img/raster/john-tablet@2x.jpg 2x
+									">
+								<img class="reviews__author-image" src="img/raster/john-mobile.jpg" srcset="img/raster/john-mobile@2x.jpg 2x" alt="Фото Джона Смита" width="50" height="49">
+							</picture>
+							<cite class="reviews__author-name">Джон Смит</cite>
+							<p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
+						</blockquote>
+						<blockquote class="reviews__item slider__item">
+							<picture class="reviews__author-picture">
+								<source media="(min-width:1200px)" srcset="
+										img/raster/ivan-desktop.jpg    1x,
+										img/raster/ivan-desktop@2x.jpg 2x
+									">
+								<source media="(min-width:768px)" srcset="
+										img/raster/ivan-tablet.jpg    1x,
+										img/raster/ivan-tablet@2x.jpg 2x
+									">
+								<img class="reviews__author-image" src="img/raster/ivan-mobile.jpg" srcset="img/raster/ivan-mobile@2x.jpg 2x" alt="Фото Ивана Бородайло" width="50" height="49">
+							</picture>
+							<cite class="reviews__author-name">Иван Бородайло</cite>
+							<p class="reviews__text">
+								В Бородинском ваша борода в надёжных руках!
+							</p>
+						</blockquote>
+						<button class="reviews__prev button" type="button">
+							<span class="visually-hidden">Предыдущий отзыв</span>
+							<span class="button__image">&#9650;</span>
+						</button>
+						<button class="reviews__next button" type="button">
+							<span class="visually-hidden">Следующий отзыв</span>
+							<span class="button__image">&#9650;</span>
+						</button>
+					</div>
+					<ul class="reviews__toggles slider__toggles">
+						<li class="slider__toggle-wrapper">
+							<label>
+								<input class="reviews__slider slider__toggle visually-hidden" name="reviews__slider-radio" type="radio" data-title="Трэвис Баркер" data-name="travis" data-description="Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!" data-review-number="0" checked="">
+								<span class="slider__indicator slider__indicator--black"></span>
+								<span class="visually-hidden">Отзыв 1</span>
+							</label>
+						</li>
+						<li class="slider__toggle-wrapper">
+							<label>
+								<input class="reviews__slider slider__toggle visually-hidden" name="reviews__slider-radio" type="radio" data-title="Джон Смит" data-name="john" data-description="Отличную стрижку мне сделали ребята." data-review-number="1">
+								<span class="slider__indicator slider__indicator--black"></span>
+								<span class="visually-hidden">Отзыв 2</span>
+							</label>
+						</li>
+						<li class="slider__toggle-wrapper">
+							<label>
+								<input class="reviews__slider slider__toggle visually-hidden" name="reviews__slider-radio" type="radio" data-title="Иван Бородайло" data-name="ivan" data-description="В Бородинском ваша борода в надёжных руках!" data-review-number="2">
+								<span class="slider__indicator slider__indicator--black"></span>
+								<span class="visually-hidden">Отзыв 3</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="page-footer">
+			<h2 class="visually-hidden">Подвал сайта</h2>
+			<div class="page-footer__wrapper">
+				<div class="page-footer__header-wrapper">
+					<div class="page-footer__contacts contacts">
+						<b class="contacts__title">Барбершоп «Бородинский»</b>
+						<p class="contacts__text">
+							г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br>
+							<a href="tel:+74954959595" class="contacts__phone">
+								<span class="contacts__phone-label">Тел.:</span>
+								+7 (495) 495-95-95
+							</a>
+						</p>
+					</div>
+					<div class="page-footer__copyright page-footer__copyright--top copyright">
+						<span class="copyright__text">Вёрстка:</span>
+						<a href="https://github.com/vaivankov" class="copyright__link">
+							Виталий Иваньков
+						</a>
+					</div>
+				</div>
+
+				<div class="page-footer__social social">
+					<b class="social__title">Давайте дружить!</b>
+					<ul class="social__list">
+						<li class="social__item">
+							<a class="social__link social__link--vkontakte" href="#">
+								<span class="visually-hidden">Мы в Вконтакте</span>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link social__link--facebook" href="#">
+								<span class="visually-hidden">Мы в Фейсбуке</span>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link social__link--instagram" href="#">
+								<span class="visually-hidden">Мы в Инстаграме</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="page-footer__copyright page-footer__copyright--bottom copyright">
+					<span class="copyright__text">Вёрстка:</span>
+					<a href="https://github.com/vaivankov" class="copyright__link">
+						Виталий Иваньков
+					</a>
+				</div>
+			</div>
+		</footer>
+		<div class="modal modal--login">
+			<h2 class="modal__title">Личный кабинет</h2>
+			<p class="modal__description">Введите свой логин и пароль</p>
+			<form class="modal__form" method="POST" action="https://echo.htmlacademy.ru">
+				<p class="modal__line modal__line--login">
+					<label class="visually-hidden" for="user-login">Логин</label>
+					<input class="input modal__user-icon" id="user-login" type="text" name="login" placeholder="email@example.com" required="">
+				</p>
+				<p class="modal__line modal__line--password">
+					<label class="visually-hidden" for="user-password">Пароль</label>
+					<input class="input modal__password-icon" id="user-password" type="password" name="password" placeholder="••••••••••••" required="">
+				</p>
+				<p class="modal__line modal__line--remember">
+					<label class="modal__checkbox-label">
+						<input class="modal__remember-checkbox visually-hidden" type="checkbox" name="remember">
+						<span class="modal__checkbox-indicator"></span>
+						Запомнить меня
+					</label>
+					<a class="modal__restore" href="#">Я забыл пароль!</a>
+				</p>
+				<button class="button modal__button" type="submit">Войти</button>
+			</form>
+			<button class="modal__close modal__close--login" type="button">
+				<span class="visually-hidden">Закрыть</span>
+			</button>
+		</div>
+		<script src="js/variables.js"></script>
+		<script src="js/func__toggleMainMenu.js"></script>
+		<script src="js/func__setCurrentReview.js"></script>
+		<script src="js/func__changeAdvantagesSlide.js"></script>
+		<script src="js/func__changeReviewsSlide.js"></script>
+		<script src="js/func__increaseReviewNumber.js"></script>
+		<script src="js/func__decreaseReviewNumber.js"></script>
+		<script src="js/func__checkIsHotKey.js"></script>
+		<script src="js/func__showModalWindow.js"></script>
+		<script src="js/func__closeModalWindow.js"></script>
+		<script src="js/func__validateForm.js"></script>
+		<svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+			<symbol id="icon-shield">
+				<title>Иконка щита</title>
+				<polygon points="0,0 50,0 50,50 25,60 0,50"></polygon>
+			</symbol>
+			<symbol id="icon-scissors">
+				<path d="M90.3 28.4a47.2 47.2 0 0 0-8.5-13.1l-2 3.8a43.2 43.2 0 0 1 6.4 10zM90 43.6c.1 1.2.2 2.3.2 3.5a43.1 43.1 0 0 1-43.1 43.1h-2.4a7.5 7.5 0 0 1 .2 1.8 6.6 6.6 0 0 1-.4 2.2H47a47 47 0 0 0 46.7-53.3 38.3 38.3 0 0 1-3.7 2.7zM4 47.1A43.1 43.1 0 0 1 68.7 9.8L72 7.2a47.1 47.1 0 1 0-42.3 83.6 18.2 18.2 0 0 1-.6-4.6A43.1 43.1 0 0 1 4 47.1z" fill="#826550"></path>
+				<path d="M38.8 84.9c7.7-2.7 16.3-9.7 14.5-19.8-.9-5.1-4.5-5-7.3-9.3 14.4-12 24.2-28.7 33-46.3h-2c-7.4 5.7-21.9 17-28.4 26.4-2.6 3.8-4.6 9.3-7.3 13.9-4.5 7.7-15.1 21.2-6.6 31.1-1.4 4.6-1.2 12.4 4 12.6 3.3-1.7-1.3-4.6.1-8.6zm8.3-38.8a2.6 2.6 0 1 1-2.6 2.6 2.6 2.6 0 0 1 2.6-2.6zM36.8 75c-1.9-9 7-17 11.9-9.3.2 7.5-6.2 15.8-11.9 9.3z" fill="#826550"></path>
+				<path d="M56 51.2c14-5.2 30.6-7.8 39-18.5-9.4 1.4-18.1 3.5-27.8 4.6-2.1 6.3-7 9.7-11.2 13.9zM12.3 40c-4.2 12.2 8.5 16 21.8 13.8 3.8-4.8 5.8-10 2-15.9-4.9-7.4-20.9-6.3-23.8 2.1zm5.3 7.3C12.5 36.4 30.5 36.2 32.2 42c2.1 7.6-9.1 8-14.6 5.2z" fill="#826550"></path>
+			</symbol>
+			<symbol id="icon-chair">
+				<path d="M87.2 22.4l-1.7 5.2a43 43 0 0 1-13 54.2 12.8 12.8 0 0 1 3.1 2.7 47.1 47.1 0 0 0 11.6-62.1zM9.5 70.3h1.3A43.1 43.1 0 0 1 66 8.4a22.3 22.3 0 0 1 2.4-3.3A47.1 47.1 0 0 0 6.2 70.5h3.3z" fill="#826550"></path>
+				<path d="M53.5 82c.4-6.1-.9-14 .7-19.1 4.5-.1 9.6.4 13.2-.7 8.2-14.8 12-34 18.4-50.6V9c-.8-3-3.9-3.7-6.7-4.6h-.7C67.8 7.9 66.5 20.5 64 32.1c-15.8-4.2-32.3-.1-32.9 15.1-4.5.1-8 1.2-9.9 3.9-.6 6.7 1.6 10.7 6.6 11.8q-1.9 8-7.2 12.5c-6.4.6-15.6-1.6-19.1 2V80c3.2 3.9 12.9 1.2 19.1 2 6.6-3.9 8.5-12.6 11.8-19.7 4.7.4 10.9-.8 14.5.7v19.7c-7.8.5-15.4 1.2-19.1 5.9h44.7c-3.2-5.3-12.4-4.6-19-6.6zM37.7 47.2c.7-11.7 15.3-11.7 25.6-8.6.1 4.7-.5 10.2 1.3 13.2-7-.9-17-4.4-26.9-4.6z" fill="#826550"></path>
+			</symbol>
+			<symbol id="icon-candy-bowl">
+				<circle cx="47.1" cy="17.3" r="9.1" fill="#826550"></circle>
+				<path d="M67.5 26.4H26.7a2.8 2.8 0 0 0-2.8 2.8v4.5a2.8 2.8 0 0 0 2.8 2.8h.8v45.4h-.8a2.8 2.8 0 0 0-2.8 2.8v4.5a2.8 2.8 0 0 0 2.8 2.8h40.8a2.8 2.8 0 0 0 2.8-2.8v-4.5a2.8 2.8 0 0 0-2.8-2.8h-.9V36.5h.8a2.8 2.8 0 0 0 2.8-2.8v-4.5a2.8 2.8 0 0 0-2.7-2.8zM33.7 36.5h13.2L33.7 49.7V36.5zm26.8 45.4H47l13.5-13.5v13.5zm0-28.7L33.7 80V64.9l26.8-26.8v15.1z" fill="#826550"></path>
+				<path d="M47.1 0a47.1 47.1 0 0 0-28.2 84.8 7.8 7.8 0 0 1 1.2-4.1 43.1 43.1 0 1 1 54 0 7.8 7.8 0 0 1 1.2 4.1A47.1 47.1 0 0 0 47.1 0z" fill="#826550"></path>
+			</symbol>
+		</svg>
+	</body>
+</html>
