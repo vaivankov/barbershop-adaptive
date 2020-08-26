@@ -511,7 +511,7 @@
 			</div>
 		</footer>
 		<div class="modal modal--login">
-			<h2>Личный кабинет</h2>
+			<h2 class="modal__title">Личный кабинет</h2>
 			<p class="modal__description">Введите свой логин и пароль</p>
 			<form
 				class="modal__form"
@@ -526,6 +526,7 @@
 						type="text"
 						name="login"
 						placeholder="email@example.com"
+						required
 					/>
 				</p>
 				<p class="modal__line modal__line--password">
@@ -536,10 +537,11 @@
 						type="password"
 						name="password"
 						placeholder="••••••••••••"
+						required
 					/>
 				</p>
 				<p class="modal__line modal__line--remember">
-					<label>
+					<label class="modal__checkbox-label">
 						<input
 							class="modal__remember-checkbox visually-hidden"
 							type="checkbox"
@@ -563,7 +565,6 @@
 		<script src="js/func__changeReviewsSlide.js"></script>
 		<script src="js/func__increaseReviewNumber.js"></script>
 		<script src="js/func__decreaseReviewNumber.js"></script>
-		<!-- <script src="js/func__.js"></script> -->
 		<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
 			<symbol id="icon-shield">
 				<title>Иконка щита</title>
