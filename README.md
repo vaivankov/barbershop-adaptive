@@ -6,7 +6,7 @@
 
 - Адаптивность: mobile, tablet, desktop
 
-- Кроссбраузерность: Chrome, Firefox
+- Кроссбраузерность: Blink, Gecko, WebKit
 
 Автор макета: [HTML Academy](https://htmlacademy.ru/)
 
