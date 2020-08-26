@@ -354,9 +354,61 @@
 				</div>
 			</div>
 		</footer>
+		<div class="modal modal--login">
+			<h2 class="modal__title">Личный кабинет</h2>
+			<p class="modal__description">Введите свой логин и пароль</p>
+			<form
+				class="modal__form"
+				method="POST"
+				action="https://echo.htmlacademy.ru"
+			>
+				<p class="modal__line modal__line--login">
+					<label class="visually-hidden" for="user-login">Логин</label>
+					<input
+						class="input modal__user-icon"
+						id="user-login"
+						type="text"
+						name="login"
+						placeholder="email@example.com"
+						required
+					/>
+				</p>
+				<p class="modal__line modal__line--password">
+					<label class="visually-hidden" for="user-password">Пароль</label>
+					<input
+						class="input modal__password-icon"
+						id="user-password"
+						type="password"
+						name="password"
+						placeholder="••••••••••••"
+						required
+					/>
+				</p>
+				<p class="modal__line modal__line--remember">
+					<label class="modal__checkbox-label">
+						<input
+							class="modal__remember-checkbox visually-hidden"
+							type="checkbox"
+							name="remember"
+						/>
+						<span class="modal__checkbox-indicator"></span>
+						Запомнить меня
+					</label>
+					<a class="modal__restore" href="#">Я забыл пароль!</a>
+				</p>
+				<button class="button modal__button" type="submit">Войти</button>
+			</form>
+			<button class="modal__close modal__close--login" type="button">
+				<span class="visually-hidden">Закрыть</span>
+			</button>
+		</div>
 		<script src="js/variables.js"></script>
 		<script src="js/func__toggleMainMenu.js"></script>
-		<svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+		<script src="js/func__checkIsHotKey.js"></script>
+		<script src="js/func__showModalWindow.js"></script>
+		<script src="js/func__closeModalWindow.js"></script>
+		<script src="js/func__validateForm.js"></script>
+		<svg style="display: none" xmlns="http://www.w3.org/2000/svg">
 			<symbol id="icon-scissors" width="21" height="20" viewBox="0 0 21 20">
 				<path
 					fill="#826550"

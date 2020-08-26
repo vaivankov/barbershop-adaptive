@@ -33,4 +33,14 @@ window.reviewsRadioAll = document.querySelectorAll(".reviews__slider");
 window.nextReviewButton = document.querySelector(".reviews__next");
 window.previousReviewButton = document.querySelector(".reviews__prev");
 
+window.loginButton = document.querySelector(".user-list__login");
+window.loginClose = document.querySelector(".modal__close--login");
+window.loginModal = document.querySelector(".modal--login");
+window.loginSubmit = document.querySelector(".modal__button");
+
+window.modalLoginLoginInput = document.querySelector(".modal__user-icon");
+window.modalLoginPasswordInput = document.querySelector(
+	".modal__password-icon"
+);
+
 mainMenu.classList.remove("main-nav--nojs");
