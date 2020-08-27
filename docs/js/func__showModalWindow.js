@@ -7,6 +7,7 @@
     }
     evt.preventDefault();
     modal.classList.add("modal-show-animation");
+    modal.classList.add("show");
     modal.classList.remove("hide");
   };
 })();

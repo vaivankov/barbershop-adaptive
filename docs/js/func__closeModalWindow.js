@@ -5,7 +5,7 @@
     evt.preventDefault();
     let modal;
     try {
-      modal = document.querySelector(".modal-show-animation");
+      modal = document.querySelector(".show");
     } catch (err) {}
     if (modal) {
       modal.classList.add("modal-hide-animation");
@@ -13,6 +13,7 @@
         modal.classList.remove("modal-hide-animation");
         modal.classList.remove("modal-show-animation");
         modal.classList.remove("modal-error-animation");
+        modal.classList.remove("show");
         modal.classList.add("hide");
       }, 500);
     }
