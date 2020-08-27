@@ -131,7 +131,7 @@
                 height="100"
                 viewBox="0 0 100 100"
               >
-                <use xlink:href="#icon-scissors"></use>
+                <use xlink:href="#advantage-scissors"></use>
               </svg>
               <div class="advantages__text">
                 <b class="advantages__title">Быстро</b>
@@ -148,7 +148,7 @@
                 height="100"
                 viewBox="0 0 100 100"
               >
-                <use xlink:href="#icon-chair"></use>
+                <use xlink:href="#advantage-chair"></use>
               </svg>
               <div class="advantages__text">
                 <b class="advantages__title">Круто</b>
@@ -165,7 +165,7 @@
                 height="100"
                 viewBox="0 0 100 100"
               >
-                <use xlink:href="#icon-candy-bowl"></use>
+                <use xlink:href="#advantage-candy-bowl"></use>
               </svg>
               <div class="advantages__text">
                 <b class="advantages__title">Дорого</b>
@@ -313,6 +313,7 @@
                 <source
                   class="reviews__source-desktop"
                   media="(min-width:1200px)"
+                  type="image/jpeg"
                   srcset="
                     img/travis-desktop.jpg    1x,
                     img/travis-desktop@2x.jpg 2x
@@ -330,6 +331,7 @@
                 <source
                   class="reviews__source-tablet"
                   media="(min-width:768px)"
+                  type="image/jpeg"
                   srcset="img/travis-tablet.jpg 1x, img/travis-tablet@2x.jpg 2x"
                 />
                 <source
@@ -368,6 +370,7 @@
                 <source
                   class="reviews__source-desktop"
                   media="(min-width:1200px)"
+                  type="image/jpeg"
                   srcset="img/john-desktop.jpg 1x, img/john-desktop@2x.jpg 2x"
                 />
                 <source
@@ -379,6 +382,7 @@
                 <source
                   class="reviews__source-tablet"
                   media="(min-width:768px)"
+                  type="image/jpeg"
                   srcset="img/john-tablet.jpg 1x, img/john-tablet@2x.jpg 2x"
                 />
                 <source
@@ -409,6 +413,7 @@
                 <source
                   class="reviews__source-desktop"
                   media="(min-width:1200px)"
+                  type="image/jpeg"
                   srcset="img/ivan-desktop.jpg 1x, img/ivan-desktop@2x.jpg 2x"
                 />
                 <source
@@ -420,6 +425,7 @@
                 <source
                   class="reviews__source-tablet"
                   media="(min-width:768px)"
+                  type="image/jpeg"
                   srcset="img/ivan-tablet.jpg 1x, img/ivan-tablet@2x.jpg 2x"
                 />
                 <source
@@ -525,23 +531,58 @@
             </a>
           </div>
         </div>
-
         <div class="page-footer__social social">
           <b class="social__title">Давайте дружить!</b>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">
-                <span class="visually-hidden">Мы в Вконтакте</span>
+              <a
+                class="social__link social__link--vkontakte"
+                href="#"
+                aria-label="Мы в Вконтакте"
+              >
+                <svg
+                  class="social__image"
+                  viewBox="0 0 26 15"
+                  width="52"
+                  height="30"
+                  role="img"
+                >
+                  <use xlink:href="#social-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <span class="visually-hidden">Мы в Фейсбуке</span>
+              <a
+                class="social__link social__link--facebook"
+                href="#"
+                aria-label="Мы в Фейсбуке"
+              >
+                <svg
+                  class="social__image"
+                  width="24"
+                  height="44"
+                  viewBox="0 0 12 22"
+                  role="img"
+                >
+                  <use xlink:href="#social-fb"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
-                <span class="visually-hidden">Мы в Инстаграме</span>
+              <a
+                class="social__link social__link--instagram"
+                href="#"
+                aria-label="Мы в Инстаграме"
+              >
+                <svg
+                  class="social__image"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 21 21"
+                  role="img"
+                >
+                  <use xlink:href="#social-insta"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -617,44 +658,10 @@
     <script src="js/func__closeModalWindow.js"></script>
     <script src="js/func__validateForm.js"></script>
     <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+      <include src="docs/img/socials-sprite.svg"></include>
+      <include src="docs/img/advantages-sprite.svg"></include>
       <symbol id="icon-shield">
-        <title>Иконка щита</title>
         <polygon points="0,0 50,0 50,50 25,60 0,50" />
-      </symbol>
-      <symbol id="icon-scissors">
-        <path
-          d="M90.3 28.4a47.2 47.2 0 0 0-8.5-13.1l-2 3.8a43.2 43.2 0 0 1 6.4 10zM90 43.6c.1 1.2.2 2.3.2 3.5a43.1 43.1 0 0 1-43.1 43.1h-2.4a7.5 7.5 0 0 1 .2 1.8 6.6 6.6 0 0 1-.4 2.2H47a47 47 0 0 0 46.7-53.3 38.3 38.3 0 0 1-3.7 2.7zM4 47.1A43.1 43.1 0 0 1 68.7 9.8L72 7.2a47.1 47.1 0 1 0-42.3 83.6 18.2 18.2 0 0 1-.6-4.6A43.1 43.1 0 0 1 4 47.1z"
-          fill="#826550"
-        />
-        <path
-          d="M38.8 84.9c7.7-2.7 16.3-9.7 14.5-19.8-.9-5.1-4.5-5-7.3-9.3 14.4-12 24.2-28.7 33-46.3h-2c-7.4 5.7-21.9 17-28.4 26.4-2.6 3.8-4.6 9.3-7.3 13.9-4.5 7.7-15.1 21.2-6.6 31.1-1.4 4.6-1.2 12.4 4 12.6 3.3-1.7-1.3-4.6.1-8.6zm8.3-38.8a2.6 2.6 0 1 1-2.6 2.6 2.6 2.6 0 0 1 2.6-2.6zM36.8 75c-1.9-9 7-17 11.9-9.3.2 7.5-6.2 15.8-11.9 9.3z"
-          fill="#826550"
-        />
-        <path
-          d="M56 51.2c14-5.2 30.6-7.8 39-18.5-9.4 1.4-18.1 3.5-27.8 4.6-2.1 6.3-7 9.7-11.2 13.9zM12.3 40c-4.2 12.2 8.5 16 21.8 13.8 3.8-4.8 5.8-10 2-15.9-4.9-7.4-20.9-6.3-23.8 2.1zm5.3 7.3C12.5 36.4 30.5 36.2 32.2 42c2.1 7.6-9.1 8-14.6 5.2z"
-          fill="#826550"
-        />
-      </symbol>
-      <symbol id="icon-chair">
-        <path
-          d="M87.2 22.4l-1.7 5.2a43 43 0 0 1-13 54.2 12.8 12.8 0 0 1 3.1 2.7 47.1 47.1 0 0 0 11.6-62.1zM9.5 70.3h1.3A43.1 43.1 0 0 1 66 8.4a22.3 22.3 0 0 1 2.4-3.3A47.1 47.1 0 0 0 6.2 70.5h3.3z"
-          fill="#826550"
-        />
-        <path
-          d="M53.5 82c.4-6.1-.9-14 .7-19.1 4.5-.1 9.6.4 13.2-.7 8.2-14.8 12-34 18.4-50.6V9c-.8-3-3.9-3.7-6.7-4.6h-.7C67.8 7.9 66.5 20.5 64 32.1c-15.8-4.2-32.3-.1-32.9 15.1-4.5.1-8 1.2-9.9 3.9-.6 6.7 1.6 10.7 6.6 11.8q-1.9 8-7.2 12.5c-6.4.6-15.6-1.6-19.1 2V80c3.2 3.9 12.9 1.2 19.1 2 6.6-3.9 8.5-12.6 11.8-19.7 4.7.4 10.9-.8 14.5.7v19.7c-7.8.5-15.4 1.2-19.1 5.9h44.7c-3.2-5.3-12.4-4.6-19-6.6zM37.7 47.2c.7-11.7 15.3-11.7 25.6-8.6.1 4.7-.5 10.2 1.3 13.2-7-.9-17-4.4-26.9-4.6z"
-          fill="#826550"
-        />
-      </symbol>
-      <symbol id="icon-candy-bowl">
-        <circle cx="47.1" cy="17.3" r="9.1" fill="#826550" />
-        <path
-          d="M67.5 26.4H26.7a2.8 2.8 0 0 0-2.8 2.8v4.5a2.8 2.8 0 0 0 2.8 2.8h.8v45.4h-.8a2.8 2.8 0 0 0-2.8 2.8v4.5a2.8 2.8 0 0 0 2.8 2.8h40.8a2.8 2.8 0 0 0 2.8-2.8v-4.5a2.8 2.8 0 0 0-2.8-2.8h-.9V36.5h.8a2.8 2.8 0 0 0 2.8-2.8v-4.5a2.8 2.8 0 0 0-2.7-2.8zM33.7 36.5h13.2L33.7 49.7V36.5zm26.8 45.4H47l13.5-13.5v13.5zm0-28.7L33.7 80V64.9l26.8-26.8v15.1z"
-          fill="#826550"
-        />
-        <path
-          d="M47.1 0a47.1 47.1 0 0 0-28.2 84.8 7.8 7.8 0 0 1 1.2-4.1 43.1 43.1 0 1 1 54 0 7.8 7.8 0 0 1 1.2 4.1A47.1 47.1 0 0 0 47.1 0z"
-          fill="#826550"
-        />
       </symbol>
     </svg>
   </body>

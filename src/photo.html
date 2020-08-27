@@ -114,19 +114,19 @@
             <ul class="works-item__parameter-list">
               <li class="works-item__parameter-item">
                 <svg width="21" height="20" class="works-item__icon">
-                  <use xlink:href="#icon-scissors"></use>
+                  <use xlink:href="#service-scissors"></use>
                 </svg>
                 Стрижка
               </li>
               <li class="works-item__parameter-item">
                 <svg width="45" height="13" class="works-item__icon">
-                  <use xlink:href="#icon-mustaches"></use>
+                  <use xlink:href="#service-mustache"></use>
                 </svg>
                 Усы
               </li>
               <li class="works-item__parameter-item">
                 <svg width="22" height="21" class="works-item__icon">
-                  <use xlink:href="#icon-beard"></use>
+                  <use xlink:href="#service-beard"></use>
                 </svg>
                 Бритьё
               </li>
@@ -138,6 +138,7 @@
             <picture>
               <source
                 media="(min-width: 1200px)"
+                type="image/webp"
                 srcset="
                   img/work-desktop-2.webp    1x,
                   img/work-desktop-2@2x.webp 2x
@@ -145,10 +146,12 @@
               />
               <source
                 media="(min-width: 1200px)"
+                type="image/jpeg"
                 srcset="img/work-desktop-2.jpg 1x, img/work-desktop-2@2x.jpg 2x"
               />
               <source
                 media="(min-width: 320px)"
+                type="image/webp"
                 srcset="img/work-tablet-2.webp 1x, img/work-tablet-2@2x.webp 2x"
               />
               <img
@@ -167,7 +170,7 @@
             <ul class="works-item__parameter-list">
               <li class="works-item__parameter-item">
                 <svg width="21" height="20" class="works-item__icon">
-                  <use xlink:href="#icon-scissors"></use>
+                  <use xlink:href="#service-scissors"></use>
                 </svg>
                 Стрижка
               </li>
@@ -179,6 +182,7 @@
             <picture>
               <source
                 media="(min-width: 1200px)"
+                type="image/webp"
                 srcset="
                   img/work-desktop-3.webp    1x,
                   img/work-desktop-3@2x.webp 2x
@@ -186,10 +190,12 @@
               />
               <source
                 media="(min-width: 1200px)"
+                type="image/jpeg"
                 srcset="img/work-desktop-3.jpg 1x, img/work-desktop-3@2x.jpg 2x"
               />
               <source
                 media="(min-width: 320px)"
+                type="image/webp"
                 srcset="img/work-tablet-3.webp 1x, img/work-tablet-3@2x.webp 2x"
               />
               <img
@@ -208,13 +214,13 @@
             <ul class="works-item__parameter-list">
               <li class="works-item__parameter-item">
                 <svg width="22" height="21" class="works-item__icon">
-                  <use xlink:href="#icon-beard"></use>
+                  <use xlink:href="#service-beard"></use>
                 </svg>
                 Бритьё
               </li>
               <li class="works-item__parameter-item">
                 <svg width="45" height="13" class="works-item__icon">
-                  <use xlink:href="#icon-mustaches"></use>
+                  <use xlink:href="#service-mustache"></use>
                 </svg>
                 Усы
               </li>
@@ -226,6 +232,7 @@
             <picture>
               <source
                 media="(min-width: 1200px)"
+                type="image/webp"
                 srcset="
                   img/work-desktop-4.webp    1x,
                   img/work-desktop-4@2x.webp 2x
@@ -233,10 +240,12 @@
               />
               <source
                 media="(min-width: 1200px)"
+                type="image/jpeg"
                 srcset="img/work-desktop-4.jpg 1x, img/work-desktop-4@2x.jpg 2x"
               />
               <source
                 media="(min-width: 320px)"
+                type="image/webp"
                 srcset="img/work-tablet-4.webp 1x, img/work-tablet-4@2x.webp 2x"
               />
               <img
@@ -256,7 +265,7 @@
             <ul class="works-item__parameter-list">
               <li class="works-item__parameter-item">
                 <svg width="21" height="20" class="works-item__icon">
-                  <use xlink:href="#icon-scissors"></use>
+                  <use xlink:href="#service-scissors"></use>
                 </svg>
                 Стрижка
               </li>
@@ -354,23 +363,58 @@
             </a>
           </div>
         </div>
-
         <div class="page-footer__social social">
           <b class="social__title">Давайте дружить!</b>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="#">
-                <span class="visually-hidden">Мы в Вконтакте</span>
+              <a
+                class="social__link social__link--vkontakte"
+                href="#"
+                aria-label="Мы в Вконтакте"
+              >
+                <svg
+                  class="social__image"
+                  viewBox="0 0 26 15"
+                  width="52"
+                  height="30"
+                  role="img"
+                >
+                  <use xlink:href="#social-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <span class="visually-hidden">Мы в Фейсбуке</span>
+              <a
+                class="social__link social__link--facebook"
+                href="#"
+                aria-label="Мы в Фейсбуке"
+              >
+                <svg
+                  class="social__image"
+                  width="24"
+                  height="44"
+                  viewBox="0 0 12 22"
+                  role="img"
+                >
+                  <use xlink:href="#social-fb"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
-                <span class="visually-hidden">Мы в Инстаграме</span>
+              <a
+                class="social__link social__link--instagram"
+                href="#"
+                aria-label="Мы в Инстаграме"
+              >
+                <svg
+                  class="social__image"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 21 21"
+                  role="img"
+                >
+                  <use xlink:href="#social-insta"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -441,24 +485,8 @@
     <script src="js/func__hideModalOnResize.js"></script>
     <script src="js/func__validateForm.js"></script>
     <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
-      <symbol id="icon-scissors" width="21" height="20" viewBox="0 0 21 20">
-        <path
-          fill="#826550"
-          d="M8 4a4 4 0 1 0-4 4 2.9 2.9 0 0 0 1.6-.4L8 10l-2.4 2.4A2.9 2.9 0 0 0 4 12a4 4 0 1 0 4 4 2.9 2.9 0 0 0-.4-1.6L10 12l7 7h4L7.6 5.6A2.9 2.9 0 0 0 8 4zM4 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm0 12a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm6-8.5a.5.5 0 1 1-.5.5.5.5 0 0 1 .5-.5zM21 1h-4l-6 6 2 2 8-8z"
-        />
-      </symbol>
-      <symbol id="icon-beard" width="22" height="21" viewBox="0 0 22 21">
-        <path
-          fill="#826550"
-          d="M21.8 0h-.1c-1 3.3-1.3 7.3-4 8.8-.5-1.4-1.8-2.1-3.2-2.7A9.5 9.5 0 0 0 11.7 5a.9.9 0 0 0-.6.1.9.9 0 0 0-.7-.1 9.5 9.5 0 0 0-2.8 1.1c-1.4.6-2.7 1.3-3.2 2.7C1.6 7.3 1.3 3.3.4 0H.3A6.3 6.3 0 0 0 0 1a110.5 110.5 0 0 0 .8 12.2c.5 2.7 2.6 4.6 4.6 5.9S9 21.2 11 21.2s4.2-1.2 5.6-2.1 4.1-3.2 4.6-5.9A110.3 110.3 0 0 0 22.1 1a6.1 6.1 0 0 0-.3-1zm-6 12a1.8 1.8 0 0 1-1.4 1.5c-1.3.1-1.9-1.9-3.4-1.9s-2.1 1.9-3.4 1.9A1.8 1.8 0 0 1 6.2 12a3.2 3.2 0 0 1 .7-2.4 3.5 3.5 0 0 1 2-.5 3.7 3.7 0 0 0 2.1-.8 3.7 3.7 0 0 0 2.1.8 3.5 3.5 0 0 1 2 .5 3.2 3.2 0 0 1 .7 2.4z"
-        />
-      </symbol>
-      <symbol id="icon-mustaches" width="45" height="13" viewBox="0 0 45 13">
-        <path
-          fill="#826550"
-          d="M22.5 8.2a10.5 10.5 0 0 0 8.8 4.7c7.1.3 13.7-5.2 13.7-7.3-2.8 2.5-7.4 2.7-10 1.7S31.9 2.8 29.2.9a5.1 5.1 0 0 0-5.7 0l-1 .8-1-.8a5.1 5.1 0 0 0-5.7 0c-2.8 2-2.1 4.9-5.9 6.4S2.8 8.1 0 5.6c0 2.1 6.5 7.6 13.7 7.3a10.5 10.5 0 0 0 8.8-4.7z"
-        />
-      </symbol>
+      <include src="docs/img/socials-sprite.svg"></include>
+      <include src="docs/img/services-sprite.svg"></include>
     </svg>
   </body>
 </html>
