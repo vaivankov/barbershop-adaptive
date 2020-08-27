@@ -9,6 +9,7 @@ let minify = require("gulp-csso");
 let imagemin = require("gulp-imagemin");
 let webp = require("gulp-webp");
 let svgstore = require("gulp-svgstore");
+let svgmin = require("gulp-svgmin");
 let rename = require("gulp-rename");
 let server = require("browser-sync").create();
 let del = require("del");
@@ -50,10 +51,75 @@ gulp.task("images", function () {
       imagemin([
         imagemin.optipng({ optimizationLevel: 3 }),
         imagemin.mozjpeg({ quality: 95, progressive: true }),
-        imagemin.svgo({
-          plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
-        }),
       ])
+    )
+    .pipe(gulp.dest("docs/img"));
+});
+
+gulp.task("svg", function () {
+  return gulp
+    .src("src/img/vector/*.svg")
+    .pipe(
+      svgmin({
+        plugins: [
+          { cleanupNumericValues: { floatPrecision: 0 } },
+          { convertColors: { names2hex: true, rgb2hex: true } },
+          { cleanupAttrs: true },
+          { inlineStyles: true },
+          { removeDoctype: true },
+          { removeXMLProcInst: true },
+          { removeComments: true },
+          { removeMetadata: true },
+          { removeTitle: true },
+          { removeDesc: true },
+          { removeUselessDefs: true },
+          { removeXMLNS: false },
+          { removeEditorsNSData: true },
+          { removeEmptyAttrs: true },
+          { removeHiddenElems: true },
+          { removeEmptyText: true },
+          { removeEmptyContainers: true },
+          { removeViewBox: true },
+          { cleanupEnableBackground: true },
+          { minifyStyles: true },
+          { convertStyleToAttrs: true },
+          { convertPathData: true },
+          { convertTransform: true },
+          { removeUnknownsAndDefaults: true },
+          { removeNonInheritableGroupAttrs: true },
+          { removeUselessStrokeAndFill: true },
+          { removeUnusedNS: true },
+          { prefixIds: false },
+          { cleanupIDs: false },
+          { cleanupListOfValues: true },
+          { moveElemsAttrsToGroup: true },
+          { moveGroupAttrsToElems: true },
+          { collapseGroups: true },
+          { removeRasterImages: true },
+          { mergePaths: true },
+          { convertShapeToPath: true },
+          { convertEllipseToCircle: true },
+          { sortAttrs: true },
+          { sortDefsChildren: true },
+          { removeDimensions: false },
+          { removeAttrs: false },
+          { removeAttributesBySelector: false },
+          { removeElementsByAttr: false },
+          { addClassesToSVGElement: false },
+          { addAttributesToSVGElement: false },
+          { removeOffCanvasPaths: false },
+          { removeStyleElement: false },
+          { removeScriptElement: false },
+          { reusePaths: true },
+        ],
+      })
+    )
+    .pipe(
+      svgmin({
+        js2svg: {
+          pretty: true,
+        },
+      })
     )
     .pipe(gulp.dest("docs/img"));
 });
@@ -67,7 +133,7 @@ gulp.task("webp", function () {
 
 gulp.task("sprite-advantages", function () {
   return gulp
-    .src("src/img/vector/advantage-*.svg")
+    .src("src/img/sprite/advantage-*.svg")
     .pipe(
       svgstore({
         inlineSvg: true,
@@ -79,7 +145,7 @@ gulp.task("sprite-advantages", function () {
 
 gulp.task("sprite-models", function () {
   return gulp
-    .src("src/img/vector/model-*.svg")
+    .src("src/img/sprite/model-*.svg")
     .pipe(
       svgstore({
         inlineSvg: true,
@@ -91,7 +157,7 @@ gulp.task("sprite-models", function () {
 
 gulp.task("sprite-services", function () {
   return gulp
-    .src("src/img/vector/service-*.svg")
+    .src("src/img/sprite/service-*.svg")
     .pipe(
       svgstore({
         inlineSvg: true,
@@ -103,7 +169,7 @@ gulp.task("sprite-services", function () {
 
 gulp.task("sprite-socials", function () {
   return gulp
-    .src("src/img/vector/social-*.svg")
+    .src("src/img/sprite/social-*.svg")
     .pipe(
       svgstore({
         inlineSvg: true,
@@ -142,6 +208,7 @@ gulp.task(
     "copy",
     "images",
     "webp",
+    "svg",
     "sprites",
     gulp.parallel("style", "html")
   )

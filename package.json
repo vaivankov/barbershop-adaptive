@@ -27,6 +27,8 @@
     "gulp-rename": "latest",
     "gulp-svgstore": "latest",
     "gulp-webp": "latest",
+    "svgo": "latest",
+    "gulp-svgmin": "latest",
     "posthtml-include": "latest",
     "@htmlacademy/editorconfig-cli": "latest",
     "stylelint": "latest",
