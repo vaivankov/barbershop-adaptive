@@ -1,8 +1,7 @@
 "use strict";
 
 (function () {
-  window.closeModalWindow = function (evt) {
-    evt.preventDefault();
+  window.hideModalOnResize = function () {
     let modal;
     try {
       modal = document.querySelector(".modal-show-animation");
@@ -19,6 +18,4 @@
   };
 })();
 
-loginClose.addEventListener("click", function () {
-  closeModalWindow.call(event, event, loginModal);
-});
+window.addEventListener("resize", hideModalOnResize);

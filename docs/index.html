@@ -222,11 +222,23 @@
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <picture class="reviews__author-picture">
+                <source srcset="
+                    img/travis-desktop.webp    1x,
+                    img/travis-desktop@2x.webp 2x
+                  " media="(min-width: 1200px)" type="image/webp">
                 <source class="reviews__source-desktop" media="(min-width:1200px)" srcset="
                     img/travis-desktop.jpg    1x,
                     img/travis-desktop@2x.jpg 2x
                   ">
+                <source class="reviews__source-tablet" media="(min-width:768px)" type="image/webp" srcset="
+                    img/travis-tablet.webp    1x,
+                    img/travis-tablet@2x.webp 2x
+                  ">
                 <source class="reviews__source-tablet" media="(min-width:768px)" srcset="img/travis-tablet.jpg 1x, img/travis-tablet@2x.jpg 2x">
+                <source class="reviews__source-mobile" media="(min-width:320px)" type="image/webp" srcset="
+                    img/travis-mobile.webp    1x,
+                    img/travis-mobile@2x.webp 2x
+                  ">
                 <img class="reviews__author-image" src="img/travis-mobile.jpg" srcset="img/travis-mobile@2x.jpg 2x" alt="Фото Трэвиса Баркера" width="50" height="49">
               </picture>
               <div class="reviews__text-wrapper">
@@ -239,8 +251,11 @@
             </blockquote>
             <blockquote class="reviews__item slider__item">
               <picture class="reviews__author-picture">
-                <source media="(min-width:1200px)" srcset="img/john-desktop.jpg 1x, img/john-desktop@2x.jpg 2x">
-                <source media="(min-width:768px)" srcset="img/john-tablet.jpg 1x, img/john-tablet@2x.jpg 2x">
+                <source srcset="img/john-desktop.webp 1x, img/john-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source class="reviews__source-desktop" media="(min-width:1200px)" srcset="img/john-desktop.jpg 1x, img/john-desktop@2x.jpg 2x">
+                <source class="reviews__source-tablet" media="(min-width:768px)" type="image/webp" srcset="img/john-tablet.webp 1x, img/john-tablet@2x.webp 2x">
+                <source class="reviews__source-tablet" media="(min-width:768px)" srcset="img/john-tablet.jpg 1x, img/john-tablet@2x.jpg 2x">
+                <source class="reviews__source-mobile" media="(min-width:320px)" type="image/webp" srcset="img/john-mobile.webp 1x, img/john-mobile@2x.webp 2x">
                 <img class="reviews__author-image" src="img/john-mobile.jpg" srcset="img/john-mobile@2x.jpg 2x" alt="Фото Джона Смита" width="50" height="49">
               </picture>
               <cite class="reviews__author-name">Джон Смит</cite>
@@ -248,8 +263,11 @@
             </blockquote>
             <blockquote class="reviews__item slider__item">
               <picture class="reviews__author-picture">
-                <source media="(min-width:1200px)" srcset="img/ivan-desktop.jpg 1x, img/ivan-desktop@2x.jpg 2x">
-                <source media="(min-width:768px)" srcset="img/ivan-tablet.jpg 1x, img/ivan-tablet@2x.jpg 2x">
+                <source srcset="img/ivan-desktop.webp 1x, img/ivan-desktop@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source class="reviews__source-desktop" media="(min-width:1200px)" srcset="img/ivan-desktop.jpg 1x, img/ivan-desktop@2x.jpg 2x">
+                <source class="reviews__source-tablet" media="(min-width:768px)" type="image/webp" srcset="img/ivan-tablet.webp 1x, img/ivan-tablet@2x.webp 2x">
+                <source class="reviews__source-tablet" media="(min-width:768px)" srcset="img/ivan-tablet.jpg 1x, img/ivan-tablet@2x.jpg 2x">
+                <source class="reviews__source-mobile" media="(min-width:320px)" type="image/webp" srcset="img/ivan-mobile.webp 1x, img/ivan-mobile@2x.webp 2x">
                 <img class="reviews__author-image" src="img/ivan-mobile.jpg" srcset="img/ivan-mobile@2x.jpg 2x" alt="Фото Ивана Бородайло" width="50" height="49">
               </picture>
               <cite class="reviews__author-name">Иван Бородайло</cite>
@@ -342,7 +360,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal modal--login">
+    <div class="modal modal--login hide">
       <h2 class="modal__title">Личный кабинет</h2>
       <p class="modal__description">Введите свой логин и пароль</p>
       <form class="modal__form" method="POST" action="https://echo.htmlacademy.ru">
@@ -377,6 +395,7 @@
     <script src="js/func__decreaseReviewNumber.js"></script>
     <script src="js/func__checkIsHotKey.js"></script>
     <script src="js/func__showModalWindow.js"></script>
+    <script src="js/func__hideModalOnResize.js"></script>
     <script src="js/func__closeModalWindow.js"></script>
     <script src="js/func__validateForm.js"></script>
     <svg style="display: none" xmlns="http://www.w3.org/2000/svg">

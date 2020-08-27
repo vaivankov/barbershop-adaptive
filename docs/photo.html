@@ -60,7 +60,12 @@
         <div class="works-item works-item--work-of-month">
           <div class="works-item__image-wrapper">
             <picture>
+              <source media="(min-width: 1200px)" srcset="
+                  img/work-desktop-1.webp    1x,
+                  img/work-desktop-1@2x.webp 2x
+                ">
               <source media="(min-width: 1200px)" srcset="img/work-desktop-1.jpg 1x, img/work-desktop-1@2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="img/work-tablet-1.webp 1x, img/work-tablet-1@2x.webp 2x">
               <img class="works-item__image" src="img/work-tablet-1.jpg" srcset="img/work-tablet-1@2x.jpg 2x" alt="Фото стрижки Лжепётра Мчиславского">
             </picture>
           </div>
@@ -95,7 +100,12 @@
         <div class="works-item">
           <div class="works-item__image-wrapper">
             <picture>
+              <source media="(min-width: 1200px)" srcset="
+                  img/work-desktop-2.webp    1x,
+                  img/work-desktop-2@2x.webp 2x
+                ">
               <source media="(min-width: 1200px)" srcset="img/work-desktop-2.jpg 1x, img/work-desktop-2@2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="img/work-tablet-2.webp 1x, img/work-tablet-2@2x.webp 2x">
               <img class="works-item__image" src="img/work-tablet-2.jpg" srcset="img/work-tablet-2@2x.jpg 2x" alt="Фото стрижки Саши Мальцева">
             </picture>
           </div>
@@ -117,7 +127,12 @@
         <div class="works-item">
           <div class="works-item__image-wrapper">
             <picture>
+              <source media="(min-width: 1200px)" srcset="
+                  img/work-desktop-3.webp    1x,
+                  img/work-desktop-3@2x.webp 2x
+                ">
               <source media="(min-width: 1200px)" srcset="img/work-desktop-3.jpg 1x, img/work-desktop-3@2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="img/work-tablet-3.webp 1x, img/work-tablet-3@2x.webp 2x">
               <img class="works-item__image" src="img/work-tablet-3.jpg" srcset="img/work-tablet-3@2x.jpg 2x" alt="Фото стрижки Владимира Иваныча">
             </picture>
           </div>
@@ -145,7 +160,12 @@
         <div class="works-item">
           <div class="works-item__image-wrapper">
             <picture>
+              <source media="(min-width: 1200px)" srcset="
+                  img/work-desktop-4.webp    1x,
+                  img/work-desktop-4@2x.webp 2x
+                ">
               <source media="(min-width: 1200px)" srcset="img/work-desktop-4.jpg 1x, img/work-desktop-4@2x.jpg 2x">
+              <source media="(min-width: 320px)" srcset="img/work-tablet-4.webp 1x, img/work-tablet-4@2x.webp 2x">
               <img class="works-item__image" src="img/work-tablet-4.jpg" srcset="img/work-tablet-4@2x.jpg 2x" alt="Фото стрижки Винстона Синего">
             </picture>
           </div>
@@ -277,7 +297,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal modal--login">
+    <div class="modal modal--login hide">
       <h2 class="modal__title">Личный кабинет</h2>
       <p class="modal__description">Введите свой логин и пароль</p>
       <form class="modal__form" method="POST" action="https://echo.htmlacademy.ru">
@@ -308,6 +328,7 @@
     <script src="js/func__checkIsHotKey.js"></script>
     <script src="js/func__showModalWindow.js"></script>
     <script src="js/func__closeModalWindow.js"></script>
+    <script src="js/func__hideModalOnResize.js"></script>
     <script src="js/func__validateForm.js"></script>
     <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
       <symbol id="icon-scissors" width="21" height="20" viewBox="0 0 21 20">
