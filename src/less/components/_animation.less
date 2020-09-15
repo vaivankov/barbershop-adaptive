@@ -1,64 +1,64 @@
 // main: ../style.less
 
 .modal-show-animation {
-	animation: bounce 0.6s;
+  animation: bounce 0.6s;
 }
 
 .modal-hide-animation {
-	animation: flyUp 0.6s;
+  animation: flyUp 0.6s;
 }
 
 .modal-error-animation {
-	animation-name: shake;
-	animation-duration: 0.6s;
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 @keyframes shake {
-	0%,
-	100% {
-		left: 52%;
-	}
+  0%,
+  100% {
+    left: 52%;
+  }
 
-	10%,
-	30%,
-	50%,
-	70%,
-	90% {
-		left: 48%;
-	}
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    left: 48%;
+  }
 
-	20%,
-	40%,
-	60%,
-	80% {
-		left: 52%;
-	}
+  20%,
+  40%,
+  60%,
+  80% {
+    left: 52%;
+  }
 }
 
 @keyframes bounce {
-	0% {
-		top: -100%;
-	}
+  0% {
+    top: -100%;
+  }
 
-	70% {
-		top: 52%;
-	}
+  70% {
+    top: 52%;
+  }
 
-	90% {
-		top: 48%;
-	}
+  90% {
+    top: 48%;
+  }
 
-	100% {
-		top: 50%;
-	}
+  100% {
+    top: 50%;
+  }
 }
 
 @keyframes flyUp {
-	0% {
-		top: 50%;
-	}
+  0% {
+    top: 50%;
+  }
 
-	100% {
-		top: -100%;
-	}
+  100% {
+    top: -100%;
+  }
 }
