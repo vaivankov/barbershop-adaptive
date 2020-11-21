@@ -28,4 +28,4 @@
 
 Автор макета: [HTML Academy](https://htmlacademy.ru/)
 
-Главная страница: [barbershop-adaptive](https://vaivankov.github.io/barbershop-adaptive/)
+Главная страница: [barbershop-adaptive](https://vaivankov.github.io/html-barbershop-adaptive/)
